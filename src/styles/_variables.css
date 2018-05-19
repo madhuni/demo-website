@@ -1,0 +1,33 @@
+:root {
+  /* Background colors for the Header/Footer and the main Sections */
+  --color-primary-black: #222;
+  --color-secondary-black: #000;
+
+  /* Secondary color for the Icons and the Active Links and some times for Buttons */
+  --color-secondary: #d5b250;
+
+  /* Primary Blue color for the Buttons/Links */
+  --color-primary-blue: #0c8cd6;
+
+  /* Pure White and Black color */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Text colors */
+  --color-text-black: #333;
+  --color-text-white: #fff;
+  --color-light-grey: #b9b9b9;
+
+  /* Font Size */
+  --default-font-size: 1.6rem;
+  --medium-font-size: 3.4rem;
+  --large-font-size: 4.8rem;
+  --larger-font-size: 6rem;
+
+  /* Font family */
+  --thin: 'RobotoThin', sans-serif;
+  --light: 'RobotoLight', sans-serif;
+  --regular: 'RobotoRegular', sans-serif;
+  --medium: 'RobotoMedium', sans-serif;
+  --bold: 'RobotoBold', sans-serif;
+}

@@ -1,0 +1,6 @@
+.app {
+  font-size: 6rem;
+  font-family: var(--thin);
+  font-weight: 400;
+  padding: 2rem;
+}
