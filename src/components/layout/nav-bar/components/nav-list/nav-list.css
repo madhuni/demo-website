@@ -14,7 +14,6 @@
 .nav-item {
   font-family: var(--light);
   color: var(--color-text-link);
-  padding: .4rem 2rem 0;
   align-self: stretch;
   transition: color .3s ease, background-color .3s ease;
   border-bottom: .4rem solid transparent;
@@ -47,6 +46,11 @@
 
 .item-link {
   justify-content: center;
+  padding: .4rem 2rem 0;
+}
+
+.item-link[type='no-click'] {
+  pointer-events: none;
 }
 
 .avatar {
@@ -64,7 +68,6 @@
     width: 80%;
     margin: 0 auto;
     border-bottom: .1rem solid #989797;
-    padding: 1rem 0 1rem 1rem;
     position: relative;
   }
 
@@ -80,6 +83,14 @@
 
   .item-name {
     height: inherit;
+  }
+
+  .item-link {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .item-link[type='no-click'] {
+    pointer-events: auto;
   }
 
   .avatar {

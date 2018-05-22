@@ -11,7 +11,7 @@ const navBar = (props) => {
   }
   return (
     <nav className={classes.join(' ')}>
-      <NavList />
+      <NavList {...props} />
     </nav>
   );
 };
