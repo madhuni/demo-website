@@ -4,7 +4,6 @@
 
 .sub-list-item {
   justify-content: flex-start;
-  padding: 1rem 2rem;
   color: var(--color-text-link);
   transition: color .3s ease, background-color .3s ease;
   border-bottom: .4rem solid transparent;
@@ -22,6 +21,7 @@
 
 .sub-list-item a {
   justify-content: left;
+  padding: 1rem 2rem;
 }
 
 .item-image {
@@ -49,6 +49,9 @@
 @media screen and (max-width: 767px) {
   .sub-list-item {
     border-left: 1px solid #989797;
+  }
+
+  .sub-list-item a {
     padding: .5rem 3rem;
   }
 

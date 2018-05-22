@@ -42,6 +42,10 @@
     /* display: none; */
   }
 
+  .sub-list-container--close {
+    max-height: 0 !important;
+  }
+
   .sub-list-container:target {
     max-height: 30rem;
   }
