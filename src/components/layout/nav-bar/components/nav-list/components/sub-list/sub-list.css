@@ -1,0 +1,55 @@
+/*////////////////////////////////////
+// CSS of SubList
+/////////////////////////////////////*/
+
+.sub-list-container {
+  overflow: hidden;
+  position: absolute;
+  top: 6.4rem;
+  height: inherit;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sub-list-container--right {
+  left: 0;
+}
+
+.sub-list-container--left {
+  right: 0;
+}
+
+.sub-list-container--right .sub-list {
+  min-width: 35rem;
+}
+
+.sub-list {
+  min-width: inherit;
+  /* width: 20rem; */
+  background-color: var(--color-primary-black);
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .sub-list-container {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    max-height: 0;
+    transition: max-height .5s ease;
+    /* display: none; */
+  }
+
+  .sub-list-container:target {
+    max-height: 30rem;
+  }
+
+  .sub-list {
+    list-style: none;
+    min-width: 100% !important;
+    padding: 1rem 0 1rem 2rem;
+    background: transparent;
+  }
+}

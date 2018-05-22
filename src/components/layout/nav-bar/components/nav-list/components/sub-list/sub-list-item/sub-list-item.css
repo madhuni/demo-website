@@ -1,0 +1,97 @@
+/*////////////////////////////////////
+// CSS of SubListItem
+/////////////////////////////////////*/
+
+.sub-list-item {
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  color: var(--color-text-link);
+  transition: color .3s ease, background-color .3s ease;
+  border-bottom: .4rem solid transparent;
+  position: relative;
+}
+
+.sub-list-item:hover {
+  color: var(--color-white);
+  background-color: var(--background-color-hover);
+}
+
+.sub-list-item:hover .sub-item-detail {
+  border-bottom: .4rem solid var(--color-secondary);
+}
+
+.sub-list-item a {
+  justify-content: left;
+}
+
+.item-image {
+  margin-right: 2rem;
+}
+
+.sub-item-detail {
+  padding: 1rem 1.5rem 1rem 0;
+  border-bottom: .4rem solid transparent;
+  transition: border .1s ease;
+}
+
+.subtitle {
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+}
+
+.caption {
+  padding-top: .5rem;
+  font-size: 1.2rem;
+  font-family: var(--regular);
+  letter-spacing: .12rem;
+}
+
+@media screen and (max-width: 767px) {
+  .sub-list-item {
+    border-left: 1px solid #989797;
+    padding: .5rem 3rem;
+  }
+
+  /* Styles for the dash part */
+  .sub-list-item::before {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 2px;
+    background-color: #989797;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .sub-list-item {
+    border-bottom: none;
+  }
+
+  .sub-list-item:hover {
+    background-color: transparent;
+  }
+
+  .item-image {
+    /* display: none; */
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .sub-item-detail {
+    border-bottom: none;
+  }
+
+  .sub-list-item:hover .sub-item-detail {
+    border-bottom: none;
+  }
+
+  .subtitle {
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
+  .caption {
+    display: none;
+  }
+}
