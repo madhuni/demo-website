@@ -2,6 +2,7 @@
   /* Background colors for the Header/Footer and the main Sections */
   --color-primary-black: #222;
   --color-secondary-black: #000;
+  --background-color-hover: rgba(0, 0, 0, 0.5);
 
   /* Secondary color for the Icons and the Active Links and some times for Buttons */
   --color-secondary: #d5b250;
@@ -16,6 +17,7 @@
   /* Text colors */
   --color-text-black: #333;
   --color-text-white: #fff;
+  --color-text-link: #989797;
   --color-light-grey: #b9b9b9;
 
   /* Font Size */
@@ -30,4 +32,15 @@
   --regular: 'RobotoRegular', sans-serif;
   --medium: 'RobotoMedium', sans-serif;
   --bold: 'RobotoBold', sans-serif;
+}
+
+.app {
+  /* Grid Definition for App */
+  --grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 10.67rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  /* --grid-template-rows: 80vh min-content 40vw repeat(3, min-content); */
+}
+
+.page {
+  /* Grid Definition for Page */
+  --grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 10.67rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }

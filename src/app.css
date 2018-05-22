@@ -1,6 +1,5 @@
 .app {
-  font-size: 6rem;
-  font-family: var(--thin);
-  font-weight: 400;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: var(--grid-template-rows);
 }

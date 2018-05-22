@@ -1,0 +1,46 @@
+/*////////////////////////////
+// Global layout related CSS
+/////////////////////////////*/
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  /* width: 10px; */
+  display: none;
+}
+
+/* Track: the area behind the Handle*/
+::-webkit-scrollbar-track {
+  /* background: transparent; */
+  display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: white;
+  border-radius: 20px;  */
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: white; */
+  display: none;
+}
