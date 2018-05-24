@@ -5,15 +5,46 @@
 
 import React, { Component } from 'react';
 import { Route, Switch, Redirect} from 'react-router-dom';
-import Home from '../pages/home/home';
-import Halo from '../pages/products/ethereal-halo/ethereal-halo';
-import Ray from '../pages/products/ethereal-ray/ethereal-ray';
-import Pentagram from '../pages/products/ethereal-pentagram/ethereal-pentagram';
-import About from '../pages/about/about';
-import Media from '../pages/media/media';
-import Blogs from '../pages/blogs/blogs';
-import Login from '../pages/login/login';
-import ErrorPage from '../pages/error-page/error-page';
+import Loadable from 'react-loadable';
+
+const Loading = () => <div className="page">Loading...</div>;
+
+const Home = Loadable({
+  loader: () => import('../pages/home/home'),
+  loading: Loading
+});
+const Halo = Loadable({
+  loader: () => import('../pages/products/ethereal-halo/ethereal-halo'),
+  loading: Loading
+});
+const Ray = Loadable({
+  loader: () => import('../pages/products/ethereal-ray/ethereal-ray'),
+  loading: Loading
+});
+const Pentagram = Loadable({
+  loader: () => import('../pages/products/ethereal-pentagram/ethereal-pentagram'),
+  loading: Loading
+});
+const About = Loadable({
+  loader: () => import('../pages/about/about'),
+  loading: Loading
+});
+const Media = Loadable({
+  loader: () => import('../pages/media/media'),
+  loading: Loading
+});
+const Blogs = Loadable({
+  loader: () => import('../pages/blogs/blogs'),
+  loading: Loading
+});
+const Login = Loadable({
+  loader: () => import('../pages/login/login'),
+  loading: Loading
+});
+const ErrorPage = Loadable({
+  loader: () => import('../pages/error-page/error-page'),
+  loading: Loading
+});
 
 class Routes extends Component {
   render () {
