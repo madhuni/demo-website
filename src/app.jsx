@@ -14,6 +14,7 @@ import './app.css';
 
 // Importing Components used in App.jsx
 import Header from './components/layout/header/header';
+import Footer from './components/layout/footer/footer';
 import Routes from './routes/routes';
 
 class App extends Component {
@@ -49,6 +50,7 @@ class App extends Component {
       <div className="app">
         <Header clicked={this.toggleNavBar} openNavBar={this.state.openNavBar} closeNavBar={this.closeNavBar} closeSubList={this.state.closeSubList}/>
         <Routes />
+        <Footer />
       </div>
     );
   }

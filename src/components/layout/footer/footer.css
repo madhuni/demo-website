@@ -1,0 +1,189 @@
+/*////////////////////////////////////
+// CSS of Footer
+/////////////////////////////////////*/
+
+.footer {
+  grid-column: 1 / -1;
+  font-family: var(--light);
+  color: var(--color-text-link);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),url('./assets/images/footer-background.jpg');
+  background-size: cover;
+}
+
+.footer-box,
+.copyright-box {
+  width: 100%;
+}
+
+.footer-box {
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  padding: 6rem 0 0;
+}
+
+.copyright-box {
+  padding: 3rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-secondary);
+  text-align: center;
+  color: #585858;
+}
+
+.logo-col {
+  grid-column: 1 / span 5;
+  overflow: hidden;
+}
+
+#footer-logo {
+  margin-bottom: 1rem;
+  /* Controversial design */
+  /* padding-left: 10rem; */
+  /* justify-content: center; */
+}
+
+.govt-initiative {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 3rem 0;
+  /* Controversial design */
+  /* justify-content: center; */
+}
+
+.make-in-india-logo {
+  grid-column: 1 / span 1;
+  height: 4rem;
+}
+
+.iso-logo {
+  grid-column: 2 / span 1;
+  height: 4rem;
+}
+
+.startup-india-logo {
+  grid-column: 3 / -1;
+  height: 3rem;
+}
+
+.govt-initiative img {
+  width: inherit;
+  display: block;
+  object-fit: cover;
+  object-fit: cover;
+}
+
+.footer-col-divider[content= "company-items"] {
+  grid-column: col-start 7 / col-end 8;
+}
+
+.footer-col-divider[content= "product-items"] {
+  grid-column: col-start 9 / col-end 10;
+}
+
+.footer-col-divider[content= "social-media"] {
+  grid-column: col-start 11 / col-end 12;
+}
+
+.footer-title {
+  color: var(--color-white);
+}
+
+.links-list {
+  list-style: none;
+  margin: 1rem 0 1rem;
+}
+
+.links-list[type = "social-media-list"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  max-width: 15rem;
+  cursor: pointer;
+}
+
+.links-list[type = "social-media-list"] .link-item {
+  padding: 0 1rem 1rem 0;
+}
+
+.link-item {
+  transition: color .3s ease, transform .3s ease;
+}
+
+.link-item:hover {
+  color: var(--color-white);
+}
+
+.link-item--social-media:hover {
+  transform: translateY(-.15rem);
+}
+
+@media screen and (max-width: 767px) {
+  .logo-col {
+    grid-column: 1 / -1;
+  }
+
+  #footer-logo {
+    padding-bottom: 3rem;
+    border-bottom: .1rem solid #989797;
+    margin-bottom: 0;
+  }
+
+  .govt-initiative {
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: .1rem solid #989797;
+  }
+
+  .footer-col-divider[content= "company-items"] {
+    grid-column: col-start 1 / col-end 4;
+  }
+
+  .footer-col-divider[content= "product-items"] {
+    grid-column: col-start 5 / col-end 8;
+  }
+
+  .footer-col-divider[content= "social-media"] {
+    grid-column: col-start 9 / col-end 12;
+  }
+
+  .footer-col-divider * {
+    text-align: center;
+  }
+
+  .footer-col-divider a {
+    display: block;
+  }
+
+  .links-list[type = "social-media-list"] {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .govt-initiative img,
+  .footer-col-divider {
+    grid-column: 1 / -1 !important;
+  }
+
+  .govt-initiative {
+    justify-items: center;
+    padding: 3rem 0;
+    margin: 0;
+    border: none;
+  }
+
+  .footer-col-divider {
+    padding-top: 2rem;
+    border-top: .1rem solid #989797;
+  }
+
+  .links-list[type = "social-media-list"] {
+    max-width: 100%;
+  }
+}

@@ -44,3 +44,8 @@
   /* Grid Definition for Page */
   --grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 10.67rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+
+.footer-box {
+  --grid-template-columns: repeat(12, [col-start] minmax(min-content, 10.67rem) [col-end]);
+  /* --grid-template-columns: repeat(12, [col-start] minmax(min-content, 1fr) [col-end]); */
+}
