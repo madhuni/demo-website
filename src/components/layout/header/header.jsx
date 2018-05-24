@@ -13,7 +13,7 @@ const header = (props) => {
     <header className="header">
       <div className="container flex-row header-container">
         <Hamburger {...props} />
-        <Logo url={logoWhite} width={40} height={40}/>
+        <Logo url={logoWhite} width={40} height={40} id={"header-logo"}/>
         <NavBar {...props}/>
       </div>
     </header>

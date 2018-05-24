@@ -2,10 +2,6 @@
 // CSS of Logo
 /////////////////////////////////////*/
 
-.logo-container {
-  padding-left: 2rem;
-}
-
 @media screen and (max-width: 767px) {
   .logo-container {
     width: 100%;
