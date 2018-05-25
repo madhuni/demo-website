@@ -10,7 +10,7 @@ import './footer.css';
 
 import logoWithName from '../../../assets/images/logo/logo-with-name-white.svg';
 import iso from './assets/images/iso-white.png';
-import makeInIndia from './assets/images/make-in-india.svg';
+import makeInIndia from './assets/images/make-in-india.png';
 import startupIndia from './assets/images/startup-india.svg';
 
 /* Importing social media icons */
@@ -27,7 +27,7 @@ const footer = (props) => {
     <div className="container container--footer">
       <div className="footer-box">
         <div className="logo-col">
-          <Logo url={logoWithName} width={80} height={80} id={"footer-logo"}/>
+          <Logo url={logoWithName} width={80} height={95} id={"footer-logo"}/>
           <div className="govt-initiative">
             <img src={makeInIndia} alt="Make In India" className="make-in-india-logo"/>
             <img src={iso} alt="Iso" className="iso-logo"/>
