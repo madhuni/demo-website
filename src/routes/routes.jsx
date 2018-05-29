@@ -7,7 +7,18 @@ import React, { Component } from 'react';
 import { Route, Switch, Redirect} from 'react-router-dom';
 import Loadable from 'react-loadable';
 
-const Loading = () => <div className="page">Loading...</div>;
+import loader from '../assets/images/loader/loader.gif';
+
+const Loading = () => {
+  return (
+    <div className="page">
+      <div className="page-loader u-text-center">
+        <img src={loader} alt="Loader" height="100"/>
+        <p>LOADING...</p>
+      </div>
+    </div>
+  );
+};
 
 const Home = Loadable({
   loader: () => import('../pages/home/home'),
