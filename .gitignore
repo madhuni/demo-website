@@ -9,6 +9,7 @@
 # production
 /build
 /notes
+/xd-designs
 
 # misc
 .DS_Store
