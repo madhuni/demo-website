@@ -1,0 +1,23 @@
+/*///////////////////////
+// Some UTILITY classes
+///////////////////////*/
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-justify {
+  text-align: justify;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 6rem;
+}
