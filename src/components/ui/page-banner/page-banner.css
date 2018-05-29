@@ -1,0 +1,29 @@
+/*
+ * __author__ = 'Kanishka Mohan Madhuni <kmmadhuni@gmail.com>'
+ * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
+ */
+
+.page-banner {
+  height: 60vh;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./media-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / -1;
+  position: relative;
+}
+  
+.container--page-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 76.8rem;
+}
+
+.banner-heading {
+  color: var(--color-white);
+  font-size: var(--larger-font-size);
+  font-family: var(--thin);
+  border-bottom: .1rem solid var(--color-secondary);
+}

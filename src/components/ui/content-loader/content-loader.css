@@ -1,0 +1,14 @@
+/*
+ * __author__ = 'Kanishka Mohan Madhuni <kmmadhuni@gmail.com>'
+ * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
+ */
+
+.content-loader {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.loading-text {
+  text-transform: uppercase;
+  color: var(--color-text-link);
+}
