@@ -16,6 +16,7 @@ import SectionHeading from '../../components/pages-component/section-heading/sec
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import MediaItem from './components/media-item/media-item';
 import ContentLoader from '../../components/ui/content-loader/content-loader';
+import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
 
 import './media.css';
 
@@ -81,6 +82,10 @@ class Media extends Component {
         <section className="section section--contact-us">
           <div className="container">
               <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"}/>
+              <ContactUsBanner
+                firstText={"Want to cover our story?"}
+                secondText={"Contact us for more details."}
+              />
           </div>
         </section>
       </div>
@@ -99,7 +104,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onUpdateFirstRun: (firstRun) => {
       dispatch({
-        type: actionType.UPDATE_FIRST_RUN,
+        type: actionType.UPDATE_FIRST_RUN_MEDIA,
         value: firstRun
       });
     },
