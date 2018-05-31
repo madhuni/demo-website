@@ -13,7 +13,7 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  if (action.type === actionType.UPDATE_FIRST_RUN) {
+  if (action.type === actionType.UPDATE_FIRST_RUN_MEDIA) {
     return {
       ...state,
       firstRun: action.value
