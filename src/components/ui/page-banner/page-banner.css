@@ -5,11 +5,28 @@
 
 .page-banner {
   height: 60vh;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./media-banner.jpg');
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
   grid-column: 1 / -1;
   position: relative;
+  background-repeat: no-repeat;
+}
+
+.page-banner--about {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/media-banner.jpg');
+}
+.page-banner--media {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/media-banner.jpg');
+}
+.page-banner--halo {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/halo-banner.png');
+}
+.page-banner--ray {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/ray-banner.jpg');
+}
+.page-banner--pentagram {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/pentagram-banner.jpg');
 }
   
 .container--page-banner {
