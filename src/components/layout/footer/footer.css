@@ -8,6 +8,7 @@
   color: var(--color-text-link);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),url('./assets/images/footer-background.jpg');
   background-size: cover;
+  background-position: top;
 }
 
 .footer-box,

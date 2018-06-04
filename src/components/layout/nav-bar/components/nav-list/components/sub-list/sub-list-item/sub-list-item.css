@@ -34,11 +34,6 @@
   transition: border .1s ease;
 }
 
-.subtitle {
-  letter-spacing: .15rem;
-  text-transform: uppercase;
-}
-
 .caption {
   padding-top: .5rem;
   font-size: 1.2rem;
@@ -87,11 +82,6 @@
 
   .sub-list-item:hover .sub-item-detail {
     border-bottom: none;
-  }
-
-  .subtitle {
-    text-transform: none;
-    letter-spacing: normal;
   }
 
   .caption {
