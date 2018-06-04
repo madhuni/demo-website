@@ -4,14 +4,53 @@
  */
 
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 
-import './ethereal-halo.css';
+import '../products.css';
+
+import SectionHeading from '../../../components/pages-component/section-heading/section-heading';
+import PageBanner from '../../../components/ui/page-banner/page-banner';
+import ProductFeatures from '../components/product-features/product-features';
+import ProductTechSpecs from '../components/product-tech-specs/product-tech-specs';
+import ContactUs from '../components/contact-us/contact-us';
+
+import haloMedium from '../assets/images/halo--medium.png';
+import haloLarge from '../assets/images/halo--larger.png';
+
+import etherealHalo from './ethereal-halo';
 
 class EtherealHalo extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="page page--ethereal-halo">
-        This is ethereal-halo Page.
+        <PageBanner heading={'The Ethereal Halo'} subHeading={'The Dawn of Hybrid Manufacturing'} classValue={'page-banner--halo'}/>
+        <section className="section section--about-product">
+          <div className="container">
+            <div className="col-12-grid">
+              <div className="product-details">
+                <SectionHeading name={"About Ethereal Halo"} classValue={"u-margin-bottom-small u-text-left"}/>
+                <div className="detail-text">
+                  <p>The Ethereal Halo has been designed to bring about a metamorphosis to the world of manufacturing and kick off the concept of hybrid manufacturing. Ethereal Halo is the world’s first consumer oriented 5-axis 3-D printer and 5-axis CNC Router.</p>
+                  <p>Ethereal Halo is a machine that introduces Hybrid Manufacturing to the world and combines both the technologies of subtractive manufacturing and additive manufacturing into one bundle, with a high degree of accuracy.</p>
+                  <p>The Halo can equip an entire spectrum ranging from the hobbyist to an industry with quick prototyping and manufacturing abilities. A 5-axis printer and a 5-axis CNC Router bundled up into one single affordable machine heralds the future.</p>
+                </div>
+              </div>
+              <Fade right>
+                <div className="product-img flex-column">
+                  <img src={haloMedium} alt="Product" width="464" height="358"/>
+                </div>
+              </Fade>
+            </div>
+          </div>
+        </section>
+        <ProductFeatures features={etherealHalo.features} />
+        <ProductTechSpecs techSpecs={etherealHalo.techSpecs}/>
+        <ContactUs />
       </div>
     );
   }

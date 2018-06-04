@@ -1,0 +1,57 @@
+/*
+ * __author__ = 'Kanishka Mohan Madhuni <kmmadhuni@gmail.com>'
+ * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
+ */
+
+.feature {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  min-width: 30rem;
+  min-height: 18rem;
+  background: rgba(255, 255, 255, .04);
+}
+
+.feature-details-container {
+  padding-left: 2rem;
+}
+
+.feature-details-container p {
+  color: var(--color-text-link);
+}
+
+@media screen and (max-width: 600px) {
+  .feature {
+    min-height: inherit;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .feature {
+    min-height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .feature-img-container img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .feature-details-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .feature-details-container .subtitle {
+    padding: .5rem 0;
+    text-transform: uppercase;
+  }
+
+  .feature-details-container p {
+    display: none;
+  }
+}
