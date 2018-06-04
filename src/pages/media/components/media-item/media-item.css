@@ -30,8 +30,11 @@
 }
 
 .media-image-container img {
-  width: 20rem;
-  height: 15rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
 }
 
 .media-details-container {

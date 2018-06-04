@@ -14,7 +14,7 @@ const Loading = () => {
     <div className="page">
       <div className="page-loader u-text-center">
         <img src={loader} alt="Loader" height="100"/>
-        <p>LOADING...</p>
+        <p className="u-text-center">LOADING...</p>
       </div>
     </div>
   );

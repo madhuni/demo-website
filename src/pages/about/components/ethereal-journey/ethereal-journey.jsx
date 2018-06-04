@@ -29,7 +29,7 @@ import img18 from '../../assets/images/ethereal-journey/18.jpg';
 
 const etherealJourney = (props) => {
   return (
-    <Carousel autoPlay={true} showIndicators={false} infiniteLoop={true} interval={2000} emulateTouch={true}>
+    <Carousel autoPlay={true} showIndicators={false} infiniteLoop={true} interval={5000} emulateTouch={true}>
       <div>
         <img src={img1} alt="Journey"/>
       </div>

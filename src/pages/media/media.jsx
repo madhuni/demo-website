@@ -66,7 +66,7 @@ class Media extends Component {
 
     return (
       <div className="page page--media">
-        <PageBanner heading={"Ethereal Machines in Media"} subHeading={"Explore what happens in Ethereal Machines"}/>
+        <PageBanner heading={"Ethereal Machines in Media"} subHeading={"Explore what happens in Ethereal Machines"} classValue={'page-banner--media'}/>
         <section className="section section--media">
           <div className="container">
             <SectionHeading name={"What media says about us"} classValue={"u-margin-bottom-big u-text-center"}/>
