@@ -56,10 +56,8 @@ class Media extends Component {
   }
 
   render() {
-    let media = [];
-
-    this.props.mediaItems.map(item => {
-      media.push(
+    const media = this.props.mediaItems.map(item => {
+      return (
         <MediaItem key={item.id} item={item} />
       );
     });

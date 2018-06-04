@@ -11,10 +11,8 @@ import './product-features.css';
 
 const productFeatures = (props) => {
   const productFeatures = props.features;
-  let features = [];
-
-  productFeatures.map(feature => {
-    features.push(
+  const features = productFeatures.map(feature => {
+    return (
       <div className="feature flex-row" key={feature.id}>
         <div className="feature-img-container">
           <img src={feature.imgUrl} alt="Feature Icon" width="80" height="80" />

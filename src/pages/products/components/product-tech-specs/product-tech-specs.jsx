@@ -14,10 +14,8 @@ import './product-tech-specs.css';
 
 const productTechSpecs = (props) => {
   const productTech = props.techSpecs;
-  let techSpecs = [];
-
-  productTech.map(techSpec => {
-    techSpecs.push(
+  const techSpecs = productTech.map(techSpec => {
+    return (
       <div className="tech-spec flex-row" key={techSpec.id}>
         <span className="tech-spec-heading u-text-left">{techSpec.title}</span>
         <span className="tech-spec-detail u-text-right">{techSpec.description}</span>

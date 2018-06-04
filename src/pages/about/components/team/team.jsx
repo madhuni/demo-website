@@ -11,11 +11,10 @@ import TeamItem from './components/team-item/team-item';
 import TeamLoader from './components/team-loader/team-loader';
 
 const team = (props) => {
-  let team = [];
   let teamLoader = [];
-
-  props.team.map(item => {
-    team.push(
+  
+  const team = props.team.map(item => {
+    return (
       <TeamItem key={item.name + item.designation} item={item}/>
     );
   });
