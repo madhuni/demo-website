@@ -25,15 +25,15 @@ const Home = Loadable({
   loading: Loading
 });
 const Halo = Loadable({
-  loader: () => import('../pages/products/ethereal-halo/ethereal-halo'),
+  loader: () => import('../pages/products/ethereal-halo/ethereal-halo.jsx'),
   loading: Loading
 });
 const Ray = Loadable({
-  loader: () => import('../pages/products/ethereal-ray/ethereal-ray'),
+  loader: () => import('../pages/products/ethereal-ray/ethereal-ray.jsx'),
   loading: Loading
 });
 const Pentagram = Loadable({
-  loader: () => import('../pages/products/ethereal-pentagram/ethereal-pentagram'),
+  loader: () => import('../pages/products/ethereal-pentagram/ethereal-pentagram.jsx'),
   loading: Loading
 });
 const About = Loadable({

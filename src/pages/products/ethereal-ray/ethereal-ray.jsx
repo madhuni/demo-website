@@ -16,7 +16,7 @@ import ContactUs from '../components/contact-us/contact-us';
 
 import ray from '../assets/images/ray.jpg';
 
-import etherealRay from './ethereal-ray';
+import etherealRayData from './ethereal-ray-data';
 
 class EtherealRay extends Component {
 
@@ -46,8 +46,8 @@ class EtherealRay extends Component {
             </div>
           </div>
         </section>
-        <ProductFeatures features={etherealRay.features} />
-        <ProductTechSpecs techSpecs={etherealRay.techSpecs}/>
+        <ProductFeatures features={etherealRayData.features} />
+        <ProductTechSpecs techSpecs={etherealRayData.techSpecs}/>
         <ContactUs />
       </div>
     );

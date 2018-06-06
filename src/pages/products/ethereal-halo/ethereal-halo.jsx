@@ -17,7 +17,7 @@ import ContactUs from '../components/contact-us/contact-us';
 import haloMedium from '../assets/images/halo--medium.png';
 import haloLarge from '../assets/images/halo--larger.png';
 
-import etherealHalo from './ethereal-halo';
+import etherealHaloData from './ethereal-halo-data';
 
 class EtherealHalo extends Component {
 
@@ -48,8 +48,8 @@ class EtherealHalo extends Component {
             </div>
           </div>
         </section>
-        <ProductFeatures features={etherealHalo.features} />
-        <ProductTechSpecs techSpecs={etherealHalo.techSpecs}/>
+        <ProductFeatures features={etherealHaloData.features} />
+        <ProductTechSpecs techSpecs={etherealHaloData.techSpecs}/>
         <ContactUs />
       </div>
     );

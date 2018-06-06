@@ -18,7 +18,7 @@ import pentaLarge from '../assets/images/pentagram--large.jpg';
 import pentaMedium from '../assets/images/pentagram--medium.png';
 import pentaLarger from '../assets/images/pentagram-first-frame-2.jpg';
 
-import etherealPentagram from './ethereal-pentagram';
+import etherealPentagramData from './ethereal-pentagram-data';
 
 class EtherealPentagram extends Component {
 
@@ -48,8 +48,8 @@ class EtherealPentagram extends Component {
             </div>
           </div>
         </section>
-        <ProductFeatures features={etherealPentagram.features}/>
-        <ProductTechSpecs techSpecs={etherealPentagram.techSpecs}/>
+        <ProductFeatures features={etherealPentagramData.features}/>
+        <ProductTechSpecs techSpecs={etherealPentagramData.techSpecs}/>
         <ContactUs />
       </div>
     );
