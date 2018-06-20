@@ -44,6 +44,10 @@ const Media = Loadable({
   loader: () => import('../pages/media/media'),
   loading: Loading
 });
+const Careers = Loadable({
+  loader: () => import('../pages/careers/careers'),
+  loading: Loading
+});
 const Blogs = Loadable({
   loader: () => import('../pages/blogs/blogs'),
   loading: Loading
@@ -69,6 +73,7 @@ class Routes extends Component {
         <Route path="/products/halo" component={Halo} />
         <Route path="/products/ray" component={Ray} />
         <Route path="/products/pentagram" component={Pentagram} />
+        <Route path="/careers" component={Careers} />
         <Route path="/" exact component={Home} />
         <Redirect to="/error-page" />
       </Switch>
