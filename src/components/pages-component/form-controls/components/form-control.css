@@ -1,0 +1,50 @@
+/*
+ * __author__ = 'Kanishka Mohan Madhuni <kmmadhuni@gmail.com>'
+ * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
+ */
+
+.form-control {
+  width: 100%;
+}
+
+.form-control label {
+  width: 100%;
+  padding: .1rem 0;
+  font-family: var(--medium);
+}
+
+.form-control .star {
+  padding: 0 .3rem;
+  color: red;
+}
+
+.form-control * {
+  width: 100%;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+  font-size: inherit;
+  padding: 1.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+  border: .1rem solid rgba(128, 128, 128, 0.3);
+  background-color: var(--color-white);
+}
+
+.form-control input:focus,
+.form-control textarea:focus,
+.form-control select:focus {
+  outline: .1rem solid var(--color-primary-blue);
+}
+
+.form-control textarea {
+  resize: none;
+  min-height: 15rem;
+}
+
+.form-control select {
+  height: 5rem;
+}
