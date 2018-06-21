@@ -22,7 +22,7 @@ const select = (props) => {
         {props.labelName}
         {props.isRequired ? <span className="star">*</span> : null}
       </label>
-      <select onChange={props.onInputChange} name={props.inputName} className="input-element" id={props.inputName} required={props.isRequired}>
+      <select onChange={props.onInputChange} name={props.inputName} className="input-element select-input" id={props.inputName} required={props.isRequired}>
         <option value="" selected disabled>{props.defaultValue}</option>
         {options}
       </select>
