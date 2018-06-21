@@ -9,7 +9,6 @@ import './careers.css';
 
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
-import { STATUS_CODES } from 'http';
 import CareersGenericForm from './components/careers-generic-form/careers-generic-form';
 
 import postJobEnquiry from '../../services/api/post-job-enquiry';
