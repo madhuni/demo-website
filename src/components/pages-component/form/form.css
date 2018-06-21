@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.form--contact-us {
+  max-width: 55rem;
+}
+
 .form-controls {
   width: 100%;
   grid-gap: 2rem 2rem;
