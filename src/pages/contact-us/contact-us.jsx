@@ -10,6 +10,8 @@ import './contact-us.css';
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
 import ContactUsForm from './components/contact-us-form/contact-us-form';
+import Modal from '../../components/ui/modal/modal';
+import FormSuccessMsg from '../../components/pages-component/form-success-msg/form-success-msg';
 
 import postGeneralQuery from '../../services/api/post-general-query';
 import postMediaQuery from '../../services/api/post-media-query';
@@ -30,7 +32,8 @@ class ContactUs extends Component {
   state = {
     formValid: true,
     errorMsg: null,
-    formSubmissionStart: false
+    formSubmissionStart: false,
+    showModal: false
   }
 
   componentDidMount() {
@@ -62,7 +65,8 @@ class ContactUs extends Component {
         ...this.state,
         formValid: true,
         errorMsg: null,
-        formSubmissionStart: false
+        formSubmissionStart: false,
+        showModal: true
       });
     } else {
       if (data.response) {
@@ -164,17 +168,29 @@ class ContactUs extends Component {
     });
   }
 
+  closeModal = () => {
+    this.setState({
+      ...this.state,
+      showModal: false
+    });
+  }
+
   render() {
     return (
-      <div className="page page--contact-us">
-        <PageBanner heading={"Contact Us"} subHeading={"Want to share or ask something, contact us"} classValue={"page-banner--careers"} />
-        <section className="section section--contact-us-form">
-          <div className="container">
-            <SectionHeading name={"Get in Touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill in your details to reach us and we will get back to you"}/>
-            <ContactUsForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired}/>
-          </div>
-        </section>
-      </div>
+      <React.Fragment>
+        <Modal show={this.state.showModal} clicked={this.closeModal}>
+          <FormSuccessMsg />
+        </Modal>
+        <div className="page page--contact-us">
+          <PageBanner heading={"Contact Us"} subHeading={"Want to share or ask something, contact us"} classValue={"page-banner--careers"} />
+          <section className="section section--contact-us-form">
+            <div className="container">
+              <SectionHeading name={"Get in Touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill in your details to reach us and we will get back to you"}/>
+              <ContactUsForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired}/>
+            </div>
+          </section>
+        </div>
+      </React.Fragment>
     );
   }
 }

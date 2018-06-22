@@ -24,14 +24,14 @@ const careersGenericForm = (props) => {
       <div className="form-controls three-col-layout">
         <InputText labelName={"Name"} inputName={"name"} placeholder={"Enter Name"} isRequired {...props}/>
         <InputEmail labelName={"Email"} inputName={"email"} placeholder={"Enter Email"} isRequired {...props}/>
-        <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Enter Contact Number"} isRequired {...props}/>
+        <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Contact No. in format (+91XXXXXXXXXX)"} isRequired {...props}/>
         <Select labelName={"Gender"} inputName={"gender"} options={genderOptions} defaultValue={"I am.."} isRequired {...props}/>
         <Select labelName={"Position"} inputName={"position"} options={possiblePositions} defaultValue={"--select--"} isRequired {...props}/>
         <InputFile labelName={"Resume"} inputName={"resume"} isRequired {...props}/>
         <TextArea labelName={"Message"} inputName={"message"} placeholder={"Leave Your Message..."} isRequired {...props}/>
       </div>
       { props.errorMsg ? <ErrorBox isRequired {...props} /> : null}
-      <Button classValue={props.formSubmissionStart ? "form-btn form-btn--disabled" : "form-btn"}>Submit</Button>
+      <Button classValue={"form-btn"} disabled={props.formSubmissionStart}>Submit</Button>
     </Form>
   );
 };

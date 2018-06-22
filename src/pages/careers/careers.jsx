@@ -10,6 +10,8 @@ import './careers.css';
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
 import CareersGenericForm from './components/careers-generic-form/careers-generic-form';
+import Modal from '../../components/ui/modal/modal';
+import FormSuccessMsg from '../../components/pages-component/form-success-msg/form-success-msg';
 
 import postJobEnquiry from '../../services/api/post-job-enquiry';
 import axios from 'axios';
@@ -24,7 +26,8 @@ class Careers extends Component {
   state = {
     formValid: true,
     errorMsg: null,
-    formSubmissionStart: false
+    formSubmissionStart: false,
+    showModal: false
   }
 
   componentDidMount() {
@@ -50,7 +53,8 @@ class Careers extends Component {
         ...this.state,
         formValid: true,
         errorMsg: null,
-        formSubmissionStart: false
+        formSubmissionStart: false,
+        showModal: true
       });
     } else {
       if (data.response) {
@@ -83,7 +87,7 @@ class Careers extends Component {
         if (inputFieldName === 'name') {
           this.formData.append('name', event.target.value);
         } else if (inputFieldName === 'contact_number') {
-          const contactNo = '+91' + event.target.value;
+          const contactNo = event.target.value;
           this.formData.append('contact_number', contactNo);
         }
         break;
@@ -124,25 +128,37 @@ class Careers extends Component {
     });
   }
 
+  closeModal = () => {
+    this.setState({
+      ...this.state,
+      showModal: false
+    });
+  }
+
   render() {
     return (
-      <div className="page page--careers">
-        <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
-        <section className="section section--openings">
-          <div className="container">
-            <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Current Openings in Ethereal Machines'} />
-            <div className="current-openings">
-              <p className="u-text-center">Sorry, we have no current openings.</p>
+      <React.Fragment>
+        <Modal show={this.state.showModal} clicked={this.closeModal}>
+          <FormSuccessMsg />
+        </Modal>
+        <div className="page page--careers">
+          <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
+          <section className="section section--openings">
+            <div className="container">
+              <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Current Openings in Ethereal Machines'} />
+              <div className="current-openings">
+                <p className="u-text-center">Sorry, we have no current openings.</p>
+              </div>
             </div>
-          </div>
-        </section>
-        <section className="section section--careers-form">
-          <div className="container">
-            <SectionHeading name={"Didn't discover what you were searching for?"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"You can simply drop your profile and we will connect with you"}/>
-            <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg}/>
-          </div>
-        </section>
-      </div>
+          </section>
+          <section className="section section--careers-form">
+            <div className="container">
+              <SectionHeading name={"Didn't discover what you were searching for?"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"You can simply drop your profile and we will connect with you"}/>
+              <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg}/>
+            </div>
+          </section>
+        </div>
+      </React.Fragment>
     );
   }
 }
