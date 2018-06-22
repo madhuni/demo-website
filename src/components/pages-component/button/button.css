@@ -19,9 +19,9 @@
   transition: all .2s ease;
 }
 
-.form-btn--disabled {
+.form-btn:disabled {
   box-shadow: none;
-  cursor: not-allowed;
+  cursor: not-allowed !important;
   background: rgba(128, 128, 128, 0.32);
 }
 

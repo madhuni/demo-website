@@ -9,7 +9,7 @@ import './button.css';
 
 const button = (props) => {
   return (
-    <button className={props.classValue} type="submit">
+    <button className={props.classValue} type="submit" disabled={props.disabled}>
       {props.children}
     </button>
   );
