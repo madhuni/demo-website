@@ -3,55 +3,64 @@
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
 
+import multiple_tool_support from './assets/images/features-images/multiple_tool_support.png';
+import multiple_material_support from './assets/images/features-images/multiple_material_support.png';
+import high_accuracy_drive_mechanism from './assets/images/features-images/high_accuracy_drive_mechanism.png';
+import desktop_size from './assets/images/features-images/desktop_size.png';
+import dedicated_pc_based_controller from './assets/images/features-images/dedicated_pc_based_controller.png';
+import advanced_nozzle_design from './assets/images/features-images/advanced_nozzle_design.png';
+import additive_subtractive from './assets/images/features-images/additive_subtractive.png';
+import five_axis_simultaneous from './assets/images/features-images/5_axis_simultaneous.png';
+
 const etherealHalo = {
   features: [
     {
       id: 1,
       title: 'Additive + Substractive Manufacturing',
       description: 'Freedom to switch between the two processes at any point',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: additive_subtractive
     },
     {
       id: 2,
       title: 'Desktop Size',
       description: 'Designed and engineered to occupy minimal floor space',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: desktop_size
     },
     {
       id: 3,
       title: '5-Axis Simultaneous Kinematics',
       description: '5 axis simulatneous movement to help reduce machining time',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: five_axis_simultaneous
     },
     {
       id: 4,
       title: 'High Accuracy Drive Mechanism',
       description: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: high_accuracy_drive_mechanism
     },
     {
       id: 5,
       title: 'Dedicated PC-Based Controller',
       description: 'Real time monitoring and control of the machining / printing job in progress',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: dedicated_pc_based_controller
     },
     {
       id: 6,
       title: 'Advanced Nozzle Design',
       description: 'Ensures zero clogging and smooth filament deposition',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: advanced_nozzle_design
     },
     {
       id: 7,
       title: 'Multiple Material Support',
       description: 'Flexibility to use numerous materials to machine or 3D print',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: multiple_material_support
     },
     {
       id: 8,
       title: 'Multiple Tool Support',
       description: 'Permits employment of various tools to machine a spectrum of materials',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      imgUrl: multiple_tool_support
     },
   ],
   techSpecs: [

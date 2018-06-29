@@ -14,9 +14,10 @@ import ProductFeatures from '../components/product-features/product-features';
 import ProductTechSpecs from '../components/product-tech-specs/product-tech-specs';
 import ContactUs from '../components/contact-us/contact-us';
 
-import pentaLarge from '../assets/images/pentagram--large.jpg';
-import pentaMedium from '../assets/images/pentagram--medium.png';
-import pentaLarger from '../assets/images/pentagram-first-frame-2.jpg';
+import pentagram from '../assets/images/pentagram.png';
+// import pentaLarge from '../assets/images/pentagram--large.jpg';
+// import pentaMedium from '../assets/images/pentagram--medium.png';
+// import pentaLarger from '../assets/images/pentagram-first-frame-2.jpg';
 
 import etherealPentagramData from './ethereal-pentagram-data';
 
@@ -40,16 +41,14 @@ class EtherealPentagram extends Component {
                   <p>Pentagram has been made keeping in mind both the industrial users and amateur users. The Pentagram is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.</p>
                 </div>
               </div>
-              <Fade right>
-                <div className="product-img flex-column">
-                  <img src={pentaLarger} alt="Product" width="464" height="358" />
-                </div>
-              </Fade>
+              <div className="product-img flex-column">
+                <img src={pentagram} alt="Product" width="464" height="358" />
+              </div>
             </div>
           </div>
         </section>
         <ProductFeatures features={etherealPentagramData.features}/>
-        <ProductTechSpecs techSpecs={etherealPentagramData.techSpecs}/>
+        <ProductTechSpecs techSpecs={etherealPentagramData.techSpecs} product={'pentagram'}/>
         <ContactUs />
       </div>
     );

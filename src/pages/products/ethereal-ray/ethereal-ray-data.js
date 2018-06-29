@@ -3,55 +3,71 @@
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
 
+import wireless_printing_monitoring_and_cloud_slicing from './assets/images/features-images/wireless_printing_monitoring_and_cloud_slicing.png';
+import software_desktop_web_and_mobile from './assets/images/features-images/software_desktop_web_and_mobile.png';
+import original_e3d_hot_end_and_extruder from './assets/images/features-images/original_e3d_hot_end_and_extruder.png';
+import optimized_cooling_system from './assets/images/features-images/optimized_cooling_system.png';
+import multiple_material_support from './assets/images/features-images/multiple_material_support.png';
+import interactive_ui_and_full_colour_touch_screen from './assets/images/features-images/interactive_ui_and_full_colour_touch_screen.png';
+import heated_bed from './assets/images/features-images/heated_bed.png';
+import dual_extruder from './assets/images/features-images/dual_extruder.png';
+import ample_print_volume from './assets/images/features-images/ample_print_volume.png';
+
 const etherealRay = {
   features: [
     {
       id: 1,
-      title: 'Additive + Substractive Manufacturing',
-      description: 'Freedom to switch between the two processes at any point',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Dual Extruder',
+      description: 'Dual extruder gives you the freedom to combine water soluble suppoort materials and engineering plastics to create complex geometries or print in two different colours',
+      imgUrl: dual_extruder
     },
     {
       id: 2,
-      title: 'Desktop Size',
-      description: 'Designed and engineered to occupy minimal floor space',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Ample Print Volume',
+      description: 'The Ray offers a print volumen of 250 x 200 x 200 mm, which can accomodate your everyday priting needs',
+      imgUrl: ample_print_volume
     },
     {
       id: 3,
-      title: '5-Axis Simultaneous Kinematics',
-      description: '5 axis simulatneous movement to help reduce machining time',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Original E3D Hot End and Extruder',
+      description: 'Original E3D Chimera hotends and E3D Titaln extruders ensure superior quality prints',
+      imgUrl: original_e3d_hot_end_and_extruder
     },
     {
       id: 4,
-      title: 'High Accuracy Drive Mechanism',
-      description: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Intereactive UI and Full Colour Touch Screen Panel',
+      description: 'A 5.5" capacitive touch screen and and intutive onboard software makes operating the Ray and easy job',
+      imgUrl: interactive_ui_and_full_colour_touch_screen
     },
     {
       id: 5,
-      title: 'Dedicated PC-Based Controller',
-      description: 'Real time monitoring and control of the machining / printing job in progress',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Optimized Cooling System',
+      description: 'An advanced cooling system with a powerful radial fan and specially designed air duct ensures better cooling, high quality bridging and better surface finishes',
+      imgUrl: optimized_cooling_system
     },
     {
       id: 6,
-      title: 'Advanced Nozzle Design',
-      description: 'Ensures zero clogging and smooth filament deposition',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Heated Bed',
+      description: 'With a heated bed that reaches upto 110 DegC, build plate adhesion is no more a worry. The heated bed also lets you print with various engineering platics',
+      imgUrl: heated_bed
     },
     {
       id: 7,
-      title: 'Multiple Material Support',
-      description: 'Flexibility to use numerous materials to machine or 3D print',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Software: Desktop, Web and Mobile',
+      description: 'With the choice of a desktop application, web based application and a mobile application, your 3D printing workflow becomes seamless and faster',
+      imgUrl: software_desktop_web_and_mobile
     },
     {
       id: 8,
-      title: 'Multiple Tool Support',
-      description: 'Permits employment of various tools to machine a spectrum of materials',
-      imgUrl: 'https://via.placeholder.com/80x80'
+      title: 'Wireless Printing, Monitoring and Cloud Slicing',
+      description: 'You can wirelessly slice, print and monitor your prints through our web based application or the mobile application',
+      imgUrl: wireless_printing_monitoring_and_cloud_slicing
+    },
+    {
+      id: 9,
+      title: 'Multiple Material Support',
+      description: 'Flexibility to use numerous 3D printing materials including water soluble PVA and engineering plastics like ABS, Nylon etc',
+      imgUrl: multiple_material_support
     },
   ],
   techSpecs: [

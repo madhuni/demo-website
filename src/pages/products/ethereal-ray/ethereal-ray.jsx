@@ -14,7 +14,8 @@ import ProductFeatures from '../components/product-features/product-features';
 import ProductTechSpecs from '../components/product-tech-specs/product-tech-specs';
 import ContactUs from '../components/contact-us/contact-us';
 
-import ray from '../assets/images/ray.jpg';
+// import ray from '../assets/images/ray.jpg';
+import ray from '../assets/images/ray.png';
 
 import etherealRayData from './ethereal-ray-data';
 
@@ -38,16 +39,14 @@ class EtherealRay extends Component {
                   <p>Ray has been made keeping in mind both the industrial users and amateur users. The Ray is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.</p>
                 </div>
               </div>
-              <Fade right>
-                <div className="product-img flex-column">
-                  <img src={ray} alt="Product" width="464" height="358" />
-                </div>
-              </Fade>
+              <div className="product-img flex-column">
+                <img src={ray} alt="Product" width="464" height="358" />
+              </div>
             </div>
           </div>
         </section>
         <ProductFeatures features={etherealRayData.features} />
-        <ProductTechSpecs techSpecs={etherealRayData.techSpecs}/>
+        <ProductTechSpecs techSpecs={etherealRayData.techSpecs} product={'ray'}/>
         <ContactUs />
       </div>
     );

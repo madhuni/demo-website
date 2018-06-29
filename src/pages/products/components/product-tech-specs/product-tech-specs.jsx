@@ -4,11 +4,12 @@
  */
 
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 
 import SectionHeading from '../../../../components/pages-component/section-heading/section-heading';
 
-import halo from '../../assets/images/halo--larger.png';
+import ray from '../../assets/images/images-no-padding/ray.png';
+import halo from '../../assets/images/images-no-padding/halo.png';
+import pentagram from '../../assets/images/images-no-padding/pentagram.png';
 
 import './product-tech-specs.css';
 
@@ -23,15 +24,29 @@ const productTechSpecs = (props) => {
     );
   });
 
+  let productImg;
+  switch (props.product) {
+    case 'ray':
+      productImg = <img src={ray} alt="Ray" />
+      break;
+    case 'halo':
+      productImg = <img src={halo} alt="Halo" />
+      break;
+    case 'pentagram':
+      productImg = <img src={pentagram} alt="Pentagram" />
+      break;
+
+    default:
+      break;
+  }
+
   return (
     <section className="section section--product-tech-specs">
       <div className="container">
         <div className="col-12-grid">
-          <Fade left>
-            <div className="product-img product-img--left flex-column">
-              <img src={halo} alt="Halo"/>
-            </div>
-          </Fade>
+          <div className="product-img product-img--left flex-column">
+            {productImg}
+          </div>
           <div className="tech-specs-container">
             <SectionHeading name={"Technical Specifications"} classValue={"u-margin-bottom-small u-text-center"} />
             <div className="tech-specs flex-column">
