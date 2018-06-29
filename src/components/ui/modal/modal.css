@@ -6,7 +6,7 @@
 .modal {
   position: absolute;
   min-width: 32rem;
-  max-height: 80%;
+  max-height: 80vh;
   padding: 1rem;
   overflow: hidden;
   overflow-y: scroll;
