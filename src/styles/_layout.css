@@ -4,6 +4,7 @@
 
 .container {
   max-width: 128rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -43,4 +44,71 @@
 ::-webkit-scrollbar-thumb:hover {
   /* background: white; */
   display: none;
+}
+
+.page {
+  margin-top: 6.4rem;
+  grid-column: 1 / -1;
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  position: relative;
+  /* background-color: #fafafa; */
+}
+
+/* Common styles for the Sections */
+section,
+.section {
+  grid-column: 1 / -1;
+  padding: 10rem 0;
+  position: relative;
+}
+
+.section--contact-us,
+.section--careers-form {
+  /* background: rgb(240, 240, 240); */
+  background: #f7f7f7;
+}
+
+.section--background-fill {
+  background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9));
+}
+
+.active {
+  color: white;
+}
+
+.page-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Page layouts */
+.three-col-layout,
+.single-col-layout,
+.four-col-layout {
+  display: grid;
+  grid-gap: 4rem 4rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.four-col-layout {
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.three-col-layout {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.single-col-layout {
+  grid-template-columns: 1fr;
+}
+
+.col-12-grid {
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
 }

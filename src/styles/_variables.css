@@ -5,10 +5,13 @@
   --background-color-hover: rgba(0, 0, 0, 0.5);
 
   /* Secondary color for the Icons and the Active Links and some times for Buttons */
-  --color-secondary: #d5b250;
+  /* --color-secondary: #d5b250; */
+  --color-secondary: #f8B91C;
+  --color-secondary-dark: #e5aa28;
 
   /* Primary Blue color for the Buttons/Links */
   --color-primary-blue: #0c8cd6;
+  --color-primary-blue-dark: #0c94e2;
 
   /* Pure White and Black color */
   --color-white: #fff;
@@ -20,11 +23,15 @@
   --color-text-link: #989797;
   --color-light-grey: #b9b9b9;
 
+  /* Background Color */
+  --background-light-gray: rgb(240, 240, 240);
+
   /* Font Size */
-  --default-font-size: 1.6rem;
-  --medium-font-size: 3.4rem;
-  --large-font-size: 4.8rem;
-  --larger-font-size: 6rem;
+  --default-font-size: 1.6rem; /* letter-spacing: 0.15 */
+  --small-font-size: 2.4rem; /* letter-spacing: 0 */
+  --medium-font-size: 3.4rem; /* letter-spacing: 0.25 */
+  --large-font-size: 4.8rem; /* letter-spacing: 0 */
+  --larger-font-size: 6rem; /* letter-spacing: -0.5 */
 
   /* Font family */
   --thin: 'RobotoThin', sans-serif;
@@ -48,4 +55,8 @@
 .footer-box {
   --grid-template-columns: repeat(12, [col-start] minmax(min-content, 10.67rem) [col-end]);
   /* --grid-template-columns: repeat(12, [col-start] minmax(min-content, 1fr) [col-end]); */
+}
+
+.col-12-grid {
+  --grid-template-columns: repeat(12, [col-start] minmax(min-content, 10.67rem) [col-end]); 
 }

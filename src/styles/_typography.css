@@ -7,6 +7,7 @@ h6,
 p {
   padding: 0;
   margin: 0;
+  font-weight: inherit;
 }
 
 a {
@@ -23,4 +24,72 @@ a {
 a:hover {
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Styles for the primary-heading */
+.primary-heading {
+  color: var(--color-white);
+  width: 100%;
+}
+
+.primary-heading--main {
+  display: block;
+  font-size: var(--large-font-size);
+  font-family: var(--thin);
+  /* border-bottom: .1rem solid var(--color-secondary); */
+  /* margin-bottom: 1rem; */
+}
+
+.hr--primary-heading {
+  width: 80%;
+  border: none;
+  border-top: .1rem solid var(--color-secondary);
+  margin: .5rem auto 1rem;
+}
+
+.primary-heading--sub {
+  display: block;
+  font-size: var(--small-font-size);
+  font-family: var(--light);
+  letter-spacing: .25px;
+  color: var(--color-text-link);
+}
+
+/* Styles for the 'section-heading' */
+.section-heading {
+  font-size: var(--medium-font-size);
+  font-family: var(--regular);
+  padding: 1rem 0;
+}
+
+.subtitle {
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .primary-heading--main {
+    font-size: var(--medium-font-size);
+    line-height: 4.5rem;
+    /* text-align: left; */
+    padding-bottom: 1rem;
+  }
+
+  .primary-heading--sub {
+    font-size: var(--default-font-size);
+    /* text-align: left; */
+  }
+
+  .hr--primary-heading {
+    width: 100%;
+    margin-right: auto;
+    margin-left: 0 !important;
+  }
 }
