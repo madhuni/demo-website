@@ -6,7 +6,7 @@
   grid-column: 1 / -1;
   font-family: var(--light);
   color: var(--color-text-link);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),url('./assets/images/footer-background.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.93)),url('./assets/images/footer-background.jpg');
   background-size: cover;
   background-position: top;
 }
