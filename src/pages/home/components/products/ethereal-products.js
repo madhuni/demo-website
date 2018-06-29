@@ -3,9 +3,9 @@
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
 
-import ray from '../../assets/ray.png';
-import halo from '../../assets/halo.png';
-import pentagram from '../../assets/pentagram.png';
+import ray from './assets/images/ray.png';
+import halo from './assets/images/halo.png';
+import pentagram from './assets/images/pentagram.png';
 
 const etherealProducts = [
   {
