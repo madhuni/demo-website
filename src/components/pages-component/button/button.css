@@ -14,7 +14,7 @@
   border: 0;
   margin: 4rem auto 2rem;
   outline: none;
-  background-color: #f8B91C;
+  background-color: var(--color-secondary);
   box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, .25);
   transition: all .2s ease;
 }

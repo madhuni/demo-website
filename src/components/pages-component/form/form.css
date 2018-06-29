@@ -16,3 +16,8 @@
   grid-gap: 2rem 2rem;
   align-items: flex-start;
 }
+
+::placeholder {
+  font-size: 1.4rem;
+  font-family: var(--light);
+}

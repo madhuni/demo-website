@@ -13,8 +13,8 @@ const formSuccessMsg = (props) => {
   return (
     <div className="form-success-msg flex-column">
       <img src={icon} alt="Done" width="60" height="60"/>
-      <p className="main-text">Your request has been successfully registered!</p>
-      <p className="sub-text">You will shortly receive a confirmation mail from us.</p>
+      <p className="main-text u-text-center">Your request has been successfully registered!</p>
+      <p className="sub-text u-text-center">You will shortly receive a confirmation mail from us.</p>
     </div>
   );
 };

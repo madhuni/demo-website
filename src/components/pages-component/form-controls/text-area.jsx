@@ -14,7 +14,7 @@ const textArea = (props) => {
         {props.labelName}
         {props.isRequired ? <span className="star">*</span> : null}
       </label>
-      <textarea type="email" onChange={props.onInputChange} name={props.inputName} placeholder={props.placeholder} className="input-element" id={props.inputName} required={props.isRequired} />
+      <textarea type="textarea" onChange={props.onInputChange} name={props.inputName} placeholder={props.placeholder} className="input-element" id={props.inputName} required={props.isRequired} />
     </FormControl>
   );
 };
