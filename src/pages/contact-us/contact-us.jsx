@@ -182,7 +182,7 @@ class ContactUs extends Component {
           <FormSuccessMsg />
         </Modal>
         <div className="page page--contact-us">
-          <PageBanner heading={"Contact Us"} subHeading={"Want to share or ask something, contact us"} classValue={"page-banner--careers"} />
+          <PageBanner heading={"Contact Us"} subHeading={"Want to share or ask something, contact us"} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
             <div className="container">
               <SectionHeading name={"Get in Touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill in your details to reach us and we will get back to you"}/>

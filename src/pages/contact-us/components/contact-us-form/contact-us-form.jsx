@@ -26,7 +26,7 @@ class ContactUsForm extends Component {
           <Select labelName={"Nature of Query"} inputName={"natureOfQuery"} options={natureOfQuery} defaultValue={"--select--"} isRequired {...this.props} />
           <InputText labelName={"Name"} inputName={"name"} placeholder={"Enter Name"} isRequired {...this.props} />
           <InputEmail labelName={"Email"} inputName={"email"} placeholder={"Enter Email"} isRequired {...this.props} />
-          <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Contact No. in format (+91XXXXXXXXXX)"} {...this.props} />
+          <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Contact No. in format (+<country-code>XXXXXXXXXX)"} isRequired {...this.props} />
           { this.props.natureOfQuery === 'General Queries' ?
             <Select labelName={"Region"} inputName={"region"} options={regionOptions} defaultValue={"--select--"} isRequired {...this.props} /> :
             null
