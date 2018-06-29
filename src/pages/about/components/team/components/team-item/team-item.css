@@ -9,13 +9,13 @@
   max-width: 30rem;
   text-align: center;
   border-radius: .5rem;
-  box-shadow: 0 4px 18px gray;
+  /* box-shadow: 0 4px 18px gray; */
 }
 
 .member-img-container {
   justify-content: center;
-  padding: 3rem 0;
-  background: #eaeaea;
+  padding: 1rem 0;
+  /* background: #eaeaea; */
 }
 
 .member-img-container img {
@@ -25,7 +25,7 @@
 
 .member-details {
   padding: 1rem .5rem;
-  background: var(--color-white);
+  /* background: var(--color-white); */
 }
 
 .member-name,

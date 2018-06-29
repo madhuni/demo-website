@@ -26,7 +26,7 @@ const team = (props) => {
   }
 
   return (
-    <div className="team-container three-col-layout">
+    <div className="team-container four-col-layout">
       {
         team.length > 0 ?
         team :

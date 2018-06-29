@@ -17,15 +17,15 @@ import img6 from '../../assets/images/ethereal-journey/6.jpg';
 import img7 from '../../assets/images/ethereal-journey/7.jpg';
 import img8 from '../../assets/images/ethereal-journey/8.jpg';
 import img9 from '../../assets/images/ethereal-journey/9.jpg';
-import img10 from '../../assets/images/ethereal-journey/10.jpg';
-import img11 from '../../assets/images/ethereal-journey/11.jpg';
+// import img10 from '../../assets/images/ethereal-journey/10.jpg';
+// import img11 from '../../assets/images/ethereal-journey/11.jpg';
 import img12 from '../../assets/images/ethereal-journey/12.jpg';
-import img13 from '../../assets/images/ethereal-journey/13.jpg';
+// import img13 from '../../assets/images/ethereal-journey/13.jpg';
 import img14 from '../../assets/images/ethereal-journey/14.jpg';
 import img15 from '../../assets/images/ethereal-journey/15.jpg';
 import img16 from '../../assets/images/ethereal-journey/16.jpg';
-import img17 from '../../assets/images/ethereal-journey/17.jpg';
-import img18 from '../../assets/images/ethereal-journey/18.jpg';
+// import img17 from '../../assets/images/ethereal-journey/17.jpg';
+// import img18 from '../../assets/images/ethereal-journey/18.jpg';
 
 const etherealJourney = (props) => {
   return (
@@ -57,18 +57,18 @@ const etherealJourney = (props) => {
       <div>
         <img src={img9} alt="Journey"/>
       </div>
-      <div>
+      {/* <div>
         <img src={img10} alt="Journey"/>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <img src={img11} alt="Journey"/>
-      </div>
+      </div> */}
       <div>
         <img src={img12} alt="Journey"/>
       </div>
-      <div>
+      {/* <div>
         <img src={img13} alt="Journey"/>
-      </div>
+      </div> */}
       <div>
         <img src={img14} alt="Journey"/>
       </div>
@@ -78,12 +78,12 @@ const etherealJourney = (props) => {
       <div>
         <img src={img16} alt="Journey"/>
       </div>
-      <div>
+      {/* <div>
         <img src={img17} alt="Journey"/>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <img src={img18} alt="Journey"/>
-      </div>
+      </div> */}
     </Carousel>
   );
 };
