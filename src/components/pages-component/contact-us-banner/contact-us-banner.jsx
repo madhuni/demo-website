@@ -18,7 +18,7 @@ const contactUsBanner = (props) => {
           <br/>
           <span>{props.secondText}</span>
         </div>
-        <NavBtn url={'contact'} classValue={'btn--transparent btn--left-aligned'}>Contact Us</NavBtn>
+        <NavBtn url={'contact'} classValue={'btn--transparent btn--golden btn--left-aligned'}>Contact Us</NavBtn>
       </div>
     </div>
   );

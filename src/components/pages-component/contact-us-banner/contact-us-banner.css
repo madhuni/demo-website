@@ -11,7 +11,7 @@
     rgba(0, 0, 0, .8) 0%,
     rgba(0, 0, 0, .8) 50%,
     transparent 50%),
-    url('./assets/images/contact-us-banner.jpg');
+    url('./assets/images/contact-us-banner.png');
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
     background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, .8)),
-      url('./assets/images/contact-us-banner.jpg');
+      url('./assets/images/contact-us-banner-small.png');
   }
 
   .content {
