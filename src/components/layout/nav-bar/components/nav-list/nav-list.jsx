@@ -11,10 +11,11 @@ import ray from '../../assets/images/ray-wireframe.svg';
 import pentagram from '../../assets/images/pentagram-wireframe.svg';
 
 const navList = (props) => {
+  const currentPath = window.location.pathname;
   return (
     <ul className="nav-list">
-      <NavItem linkType={'text'} navLink={true} address={'/'} name={'Home'} {...props}/>
-      <NavItem linkType={'text'} navLink={false} address={'#product-sub-list'} name={'Products'}>
+      <NavItem linkType={'text'} navLink={true} address={'/home'} name={'Home'} {...props}/>
+      <NavItem linkType={'text'} navLink={false} address={'#product-sub-list'} name={'Products'} showActive={currentPath.includes('products')}>
         <SubList id={'product-sub-list'}>
           <SubListItem url={halo} width={100} height={100} link={'/products/halo'} {...props}>
             <span className="subtitle">Halo</span>
@@ -33,7 +34,8 @@ const navList = (props) => {
       <NavItem linkType={'text'} navLink={true} address={'/about'} name={'About Us'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/media'} name={'Media'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/blogs'} name={'Blogs'} {...props}/>
-      <NavItem
+      <NavItem linkType={'text'} navLink={true} address={'/contact'} name={'Contact Us'} {...props}/>
+      {/* <NavItem
         linkType={'img'}
         img={{
           url: 'https://avatars0.githubusercontent.com/u/13901302?s=400&u=e0b3a498eda561b52664c58db8ce33cef508abd4&v=4',
@@ -52,7 +54,7 @@ const navList = (props) => {
             <span className="subtitle">Log Out</span>
           </SubListItem>
         </SubList>
-      </NavItem>
+      </NavItem> */}
     </ul>
   );
 };

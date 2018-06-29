@@ -20,10 +20,10 @@ const navItem = (props) => {
       <div className="item-name flex-row">
         {
           props.navLink ?
-          <NavLink to={props.address} exact className="item-link">
+          <NavLink to={props.address} className="item-link">
             {props.name}
           </NavLink> :
-          <a href={props.address} className="item-link" type="no-click">{item}</a>
+          <a href={props.address} className={props.showActive ? 'item-link active' : 'item-link'} type="no-click">{item}</a>
         }
       </div>
       {props.children}
