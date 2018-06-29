@@ -7,7 +7,6 @@
 
 // importing React and related dependencies
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
 
 // Importing CSS for the App.jsx file
 import './app.css';
