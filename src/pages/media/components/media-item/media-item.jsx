@@ -31,8 +31,8 @@ const mediaItem = (props) => {
           </span>
           <span className="media-date">
             <img src={calendarIcon} alt="Calendar" width="16" height="16" className="icon"/>
-            <span>Published On:</span>
-            <span>January 2018</span>
+            {/* <span>Published On:</span>ssf */}
+            <span>{props.item.published_at}</span>
           </span>
         </div>
         <div className="media-description">{props.item.description}</div>

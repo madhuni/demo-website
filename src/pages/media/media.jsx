@@ -62,6 +62,14 @@ class Media extends Component {
       );
     });
 
+    let mediaLoader = [];
+
+    for (let i = 0; i < 6; i++) {
+      mediaLoader.push(
+        <ContentLoader key={i + '_loader'} />
+      );
+    }
+
     return (
       <div className="page page--media">
         <PageBanner heading={"Ethereal Machines in Media"} subHeading={"Explore what happens in Ethereal Machines"} classValue={'page-banner--media'}/>
@@ -71,7 +79,7 @@ class Media extends Component {
             <div className="media-container">
               {
                 this.state.loadingContent ? 
-                <ContentLoader /> :
+                mediaLoader :
                 media
               }
             </div>
