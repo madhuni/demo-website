@@ -79,6 +79,7 @@ class Routes extends Component {
         <Route path="/products/pentagram" component={Pentagram} />
         <Route path="/contact" component={ContactUs} />
         <Route path="/careers" component={Careers} />
+        <Route path="/home" exact component={Home} />
         <Route path="/" exact component={Home} />
         <Redirect to="/error-page" />
       </Switch>
