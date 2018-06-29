@@ -14,7 +14,7 @@ import mediaLinks from './media-links';
 const homePageMedia = (props) => {
   const homePageMediaItems = mediaLinks.map((item) => {
     return (
-      <HomePageMediaItem key={item.id} url={item.url} />
+      <HomePageMediaItem key={item.id} url={item.url} imgUrl={item.imgUrl}/>
     );
   });
 
