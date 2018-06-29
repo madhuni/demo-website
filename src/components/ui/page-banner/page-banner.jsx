@@ -16,6 +16,7 @@ const pageBanner = (props) => {
           <hr className="hr--primary-heading"/>
           <span className="primary-heading--sub">{props.subHeading}</span>
         </h1>
+        {props.children}
       </div>
     </div>
   );

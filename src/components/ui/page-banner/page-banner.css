@@ -13,21 +13,36 @@
   background-repeat: no-repeat;
 }
 
+.page-banner--home {
+  height: 80vh;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/home-page-banner.gif');
+}
+
 .page-banner--about {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/media-banner.jpg');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/about-us-3.jpeg');
 }
 .page-banner--media {
   background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/media-banner.jpg');
 }
 .page-banner--halo {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/halo-banner.png');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/images/halo_banner.png');
 }
 .page-banner--ray {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/ray-banner.jpg');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/images/ray_banner.png');
 }
 .page-banner--pentagram {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/pentagram-banner.jpg');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/pentagram-banner.jpg');
 }
+.page-banner--careers {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/careers_banner_2.jpeg');
+}
+.page-banner--blogs-page {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/blogs-banner.jpg');
+}
+.page-banner--contact-us {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/contact_us_banner.JPG');
+}
+
   
 .container--page-banner {
   position: absolute;
