@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+import LazyLoad from 'react-lazyload';
 
 import '../products.css';
 
@@ -47,7 +47,9 @@ class EtherealRay extends Component {
         </section>
         <ProductFeatures features={etherealRayData.features} />
         <ProductTechSpecs techSpecs={etherealRayData.techSpecs} product={'ray'}/>
-        <ContactUs />
+        <LazyLoad height={200} offset={100} once>
+          <ContactUs />
+        </LazyLoad>
       </div>
     );
   }

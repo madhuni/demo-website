@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import LazyLoad from 'react-lazyload';
 import axios from '../../services/axios/axios';
 import * as actionType from '../../store/actions/action-type';
 
@@ -59,22 +60,28 @@ class About extends Component {
         <section className="section section--journey section--background-fill">
           <div className="container">
             <SectionHeading classValue={'u-margin-bottom-big u-text-center u-text-white'} name={'The Ethereal Journey'}/>
-            <EtherealJourney />
+            <LazyLoad height={200} offset={100} once>
+              <EtherealJourney />
+            </LazyLoad>
           </div>
         </section>
         <section className="section section--team">
           <div className="container">
             <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Meet our team'}/>
-            <Team team={this.props.teamItems} loading={this.state.loadingContent}/>
+            <LazyLoad height={200} offset={100} once>
+              <Team team={this.props.teamItems} loading={this.state.loadingContent}/>
+            </LazyLoad>
           </div>
         </section>
         <section className="section section--contact-us">
           <div className="container">
             <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
-            <ContactUsBanner
-              firstText={"Not sure where to go next?"}
-              secondText={"Contact us to clear your doubts."}
-            />
+            <LazyLoad height={200} offset={100} once>
+              <ContactUsBanner
+                firstText={"Not sure where to go next?"}
+                secondText={"Contact us to clear your doubts."}
+              />
+            </LazyLoad>
           </div>
         </section>
       </div>

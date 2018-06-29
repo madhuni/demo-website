@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 import SectionHeading from '../../../../components/pages-component/section-heading/section-heading';
 
@@ -15,7 +16,9 @@ const productFeatures = (props) => {
     return (
       <div className="feature flex-row" key={feature.id}>
         <div className="feature-img-container">
-          <img src={feature.imgUrl} alt="Feature Icon" width="80" height="80" />
+          <LazyLoad height={100} offset={100} once>
+            <img src={feature.imgUrl} alt="Feature Icon" width="80" height="80" />
+          </LazyLoad>
         </div>
         <div className="feature-details-container">
           <div className="subtitle u-text-white">

@@ -4,6 +4,7 @@
  */
 
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 
 import '../products.css';
 
@@ -88,7 +89,9 @@ class EtherealHalo extends Component {
           </section>
           <ProductFeatures features={etherealHaloData.features} />
           <ProductTechSpecs techSpecs={etherealHaloData.techSpecs} product={'halo'}/>
-          <ContactUs />
+          <LazyLoad height={200} offset={100} once>
+            <ContactUs />
+          </LazyLoad>
         </div>
       </React.Fragment>
     );

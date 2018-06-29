@@ -4,6 +4,8 @@
  */
 
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
+import Spinner from '../../../../components/ui/spinner/spinner';
 
 // importing UI component used
 import SectionHeading from '../../../../components/pages-component/section-heading/section-heading';
@@ -17,14 +19,16 @@ import './blogs-page.css';
 const blogsPage = (props) => {
   const blogsItem = blogsData.map((item) => {
     return (
-      <BlogItem
-        key={item.id}
-        title={item.title}
-        date={item.date}
-        url={item.url}
-        imgUrl={item.imgUrl}
-        {...props}
-      />
+      <LazyLoad height={200} offset={100} placeholder={<Spinner />} once>
+        <BlogItem
+          key={item.id}
+          title={item.title}
+          date={item.date}
+          url={item.url}
+          imgUrl={item.imgUrl}
+          {...props}
+        />
+      </LazyLoad>
     );
   });
   return (

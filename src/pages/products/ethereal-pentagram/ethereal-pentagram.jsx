@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+import LazyLoad from 'react-lazyload';
 
 import '../products.css';
 
@@ -49,7 +49,9 @@ class EtherealPentagram extends Component {
         </section>
         <ProductFeatures features={etherealPentagramData.features}/>
         <ProductTechSpecs techSpecs={etherealPentagramData.techSpecs} product={'pentagram'}/>
-        <ContactUs />
+        <LazyLoad height={200} offset={100} once>
+          <ContactUs />
+        </LazyLoad>
       </div>
     );
   }

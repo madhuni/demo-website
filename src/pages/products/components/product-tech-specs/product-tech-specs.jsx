@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 import SectionHeading from '../../../../components/pages-component/section-heading/section-heading';
 
@@ -27,13 +28,13 @@ const productTechSpecs = (props) => {
   let productImg;
   switch (props.product) {
     case 'ray':
-      productImg = <img src={ray} alt="Ray" />
+      productImg = <LazyLoad height={200} offset={100} once><img src={ray} alt="Ray" /></LazyLoad>
       break;
     case 'halo':
-      productImg = <img src={halo} alt="Halo" />
+      productImg = <LazyLoad height={200} offset={100} once><img src={halo} alt="Halo" /></LazyLoad>
       break;
-    case 'pentagram':
-      productImg = <img src={pentagram} alt="Pentagram" />
+      case 'pentagram':
+      productImg = <LazyLoad height={200} offset={100} once><img src={pentagram} alt="Pentagram" /></LazyLoad>
       break;
 
     default:

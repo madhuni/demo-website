@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 import './team.css';
 
@@ -15,7 +16,9 @@ const team = (props) => {
   
   const team = props.team.map(item => {
     return (
-      <TeamItem key={item.name + item.designation} item={item}/>
+      <LazyLoad height={200} offset={100} placeholder={<TeamLoader />} once>
+        <TeamItem key={item.name + item.designation} item={item}/>
+      </LazyLoad>
     );
   });
 

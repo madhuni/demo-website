@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import LazyLoad from 'react-lazyload';
 import axios from '../../services/axios/axios';
 import * as actionType from '../../store/actions/action-type';
 
@@ -58,7 +59,9 @@ class Media extends Component {
   render() {
     const media = this.props.mediaItems.map(item => {
       return (
-        <MediaItem key={item.id} item={item} />
+        <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once>
+          <MediaItem key={item.id} item={item} />
+        </LazyLoad>
       );
     });
 

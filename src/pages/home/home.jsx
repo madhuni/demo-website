@@ -4,6 +4,7 @@
  */
 
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 
 import './home.css';
 
@@ -26,28 +27,36 @@ class Home extends Component {
         <section className="section section--products">
           <div className="container">
             <SectionHeading name={"Our wide range of industrial grade products"} classValue={"u-margin-bottom-big u-text-center"} />
-            <Products />
+            <LazyLoad height={200} offset={200} once>
+              <Products />
+            </LazyLoad>
           </div>
         </section>
         <section className="section section--why-us section--background-fill">
           <div className="container">
             <SectionHeading name={"Why we are the best"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
-            <CompanyFeatures />
+            <LazyLoad height={200} offset={200} once>
+              <CompanyFeatures />
+            </LazyLoad>
           </div>
         </section>
         <section className="section section--in-media">
           <div className="container">
             <SectionHeading name={"Ethereal Machines in Media"} classValue={"u-margin-bottom-big u-text-center"} />
-            <HomePageMedia />
+            <LazyLoad height={200} offset={200} once>
+              <HomePageMedia />
+            </LazyLoad>
           </div>
         </section>
         <section className="section section--contact-us">
           <div className="container">
             <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
-            <ContactUsBanner
-              firstText={"Want to exporle more about us?"}
-              secondText={"Write us for any queries."}
-            />
+            <LazyLoad height={200} offset={200} once>
+              <ContactUsBanner
+                firstText={"Want to exporle more about us?"}
+                secondText={"Write us for any queries."}
+              />
+            </LazyLoad>
           </div>
         </section>
       </div>
