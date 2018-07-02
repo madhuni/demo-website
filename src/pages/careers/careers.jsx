@@ -58,7 +58,7 @@ class Careers extends Component {
       });
     } else {
       if (data.response) {
-        console.log(data.response.data);
+        // console.log(data.response.data);
         this.setState({
           ...this.state,
           formValid: false,

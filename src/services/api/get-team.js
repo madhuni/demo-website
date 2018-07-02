@@ -8,7 +8,7 @@ import axios from '../axios/axios';
 const getTeam = (callback) => {
   axios.get('/team/')
     .then(res => {
-      console.log(res.data);
+      // console.log(res.data);
       callback(res.data);
     })
     .catch(err => {

@@ -8,7 +8,7 @@ import axios from '../axios/axios';
 const postJobEnquiry = (callback, data) => {
   axios.post('careers/enquiries/', data)
     .then(res => {
-      console.log(res);
+      // console.log(res);
       callback(res);
     })
     .catch(err => {

@@ -70,14 +70,14 @@ class ContactUs extends Component {
       });
     } else {
       if (data.response) {
-        console.log(data.response.data);
+        // console.log(data.response.data);
         this.setState({
           ...this.state,
           formValid: false,
           errorMsg: data.response.data,
           formSubmissionStart: false
         });
-        console.log(this.natureOfQuery);
+        // console.log(this.natureOfQuery);
       }
     }
   }

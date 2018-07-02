@@ -38,7 +38,7 @@ class App extends Component {
 
   /* This function will be called whenever a nav-link will be clicked */
   closeNavBar = () => {
-    console.log('closeNavBar is called');
+    // console.log('closeNavBar is called');
     this.setState({
       openNavBar: false,
     });
