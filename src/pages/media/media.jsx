@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LazyLoad from 'react-lazyload';
-import axios from '../../services/axios/axios';
 import * as actionType from '../../store/actions/action-type';
 
 // importing the API used for this page
@@ -75,10 +74,10 @@ class Media extends Component {
 
     return (
       <div className="page page--media">
-        <PageBanner heading={"Ethereal Machines in Media"} subHeading={"Explore what happens in Ethereal Machines"} classValue={'page-banner--media'}/>
+        <PageBanner heading={"Ethereal Machines in Media"} classValue={'page-banner--media'}/>
         <section className="section section--media">
           <div className="container">
-            <SectionHeading name={"What media says about us"} classValue={"u-margin-bottom-big u-text-center"}/>
+            {/* <SectionHeading name={"What media says about us"} classValue={"u-margin-bottom-big u-text-center"}/> */}
             <div className="media-container">
               {
                 this.state.loadingContent ? 
@@ -92,8 +91,8 @@ class Media extends Component {
           <div className="container">
               <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"}/>
               <ContactUsBanner
-                firstText={"Want to cover our story?"}
-                secondText={"Contact us for more details."}
+                firstText={"We are excited to tell you more about our story."}
+                secondText={"Let's get in touch."}
               />
           </div>
         </section>
