@@ -143,17 +143,17 @@ class Careers extends Component {
         </Modal>
         <div className="page page--careers">
           <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
-          <section className="section section--openings">
+          {/* <section className="section section--openings">
             <div className="container">
               <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Current Openings in Ethereal Machines'} />
               <div className="current-openings">
                 <p className="u-text-center">Sorry, we have no current openings.</p>
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="section section--careers-form">
             <div className="container">
-              <SectionHeading name={"Didn't discover what you were searching for?"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"You can simply drop your profile and we will connect with you"}/>
+              <SectionHeading name={"Get in touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"Let's schedule an interview!"}/>
               <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg}/>
             </div>
           </section>
