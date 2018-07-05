@@ -14,8 +14,8 @@ const contactUs = (props) => {
       <div className="container">
         <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
         <ContactUsBanner
-          firstText={"Want to become Reseller or Distributor or have any queries about the product?"}
-          secondText={"Contact us for more details."}
+          firstText={"Let's partner up!"}
+          secondText={"Contact us to become a Distributor/ Reseller or if you have any technical query."}
         />
       </div>
     </section>

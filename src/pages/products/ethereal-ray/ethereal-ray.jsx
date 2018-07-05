@@ -28,15 +28,25 @@ class EtherealRay extends Component {
   render() {
     return (
       <div className="page page--ethereal-ray">
-        <PageBanner heading={'The Ethereal Ray'} subHeading={'A dual extruder printer for your everyday 3D printing needs!'} classValue={'page-banner--ray'}/>
+        <PageBanner heading={'The Ethereal Ray'} subHeading={'A smart dual extruder printer for your everyday 3D printing needs!'} classValue={'page-banner--ray'}/>
         <section className="section section--about-product">
           <div className="container">
             <div className="col-12-grid">
               <div className="product-details">
                 <SectionHeading name={"About Ethereal Ray"} classValue={"u-margin-bottom-small u-text-left"} />
                 <div className="detail-text">
-                  <p>The Ray has been designed to be the world's first desktop simultaneous 5 axis subtractive manufacturing machine. Equipped with the capabilities of machining a plethora of materials, the Ray is poised to disrupt the manufacturing industry.</p>
-                  <p>Ray has been made keeping in mind both the industrial users and amateur users. The Ray is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.</p>
+                  <p>The Ethereal Ray is a smart device built to unbridle the designer and
+                  engineer in you. Equipped with two nozzles, the Ray helps
+                  you achieve prints with dissolvable support materials and dual
+                  colours.</p>
+                  <p>Print seamlessly via Wi-Fi. Slice on the cloud. Monitor through
+                  your phone. Save prints on the cloud.</p>
+                  <p>User experience takes top priority at Ethereal Machines. The
+                  Ray dons a 5.5" capacitive touchscreen and LEDs that signal
+                  various stages of a print to enhance user experience.</p>
+                  <p>The Ethereal Ray is poised to provide a makeover to your
+                  desktop and is your tool to take your ideas from design to
+                  prototype stage.</p>
                 </div>
               </div>
               <div className="product-img flex-column">
