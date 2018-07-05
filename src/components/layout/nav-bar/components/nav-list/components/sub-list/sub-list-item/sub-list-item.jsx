@@ -7,7 +7,11 @@ const subListItem = (props) => {
   return (
     <li className="sub-list-item" onClick={props.closeNavBar}>
       <NavLink to={props.link}>
-        <img src={props.url} alt="Item" className="item-image" width={props.width} height={props.height}/>
+        {
+          props.hasImage ? 
+          <img src={props.url} alt="Item" className="item-image" width={props.width} height={props.height}/> :
+          null
+        }
         <span className="sub-item-detail">
             {props.children}
         </span>

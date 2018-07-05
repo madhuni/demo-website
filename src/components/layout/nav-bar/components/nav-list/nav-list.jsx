@@ -9,6 +9,7 @@ import SubListItem from './components/sub-list/sub-list-item/sub-list-item';
 import halo from '../../assets/images/halo-wireframe.svg';
 import ray from '../../assets/images/ray-wireframe.svg';
 import pentagram from '../../assets/images/pentagram-wireframe.svg';
+import concrete from '../../assets/images/concrete-wireframe.svg';
 
 const navList = (props) => {
   const currentPath = window.location.pathname;
@@ -17,17 +18,21 @@ const navList = (props) => {
       <NavItem linkType={'text'} navLink={true} address={'/home'} name={'Home'} {...props}/>
       <NavItem linkType={'text'} navLink={false} address={'#product-sub-list'} name={'Products'} showActive={currentPath.includes('products')}>
         <SubList id={'product-sub-list'}>
-          <SubListItem url={halo} width={100} height={100} link={'/products/halo'} {...props}>
-            <span className="subtitle">Halo</span>
-            <div className="caption">5-axis 3D Printer and CNC</div>
-          </SubListItem>
-          <SubListItem url={ray} width={100} height={100} link={'/products/ray'} {...props}>
+          <SubListItem url={ray} width={70} height={70} hasImage link={'/products/ray'} {...props}>
             <span className="subtitle">Ray</span>
-            <div className="caption">A Smart Dual Extruder 3D Printer</div>
+            <div className="caption">Smart Dual Extruder 3D Printer</div>
           </SubListItem>
-          <SubListItem url={pentagram} width={100} height={100} link={'/products/pentagram'} {...props}>
+          <SubListItem url={halo} width={70} height={70} hasImage link={'/products/halo'} {...props}>
+            <span className="subtitle">Halo</span>
+            <div className="caption">Hybrid 5-axis CNC Machine and 3D Printer</div>
+          </SubListItem>
+          <SubListItem url={pentagram} width={70} height={70} hasImage link={'/products/pentagram'} {...props}>
             <span className="subtitle">Pentagram</span>
-            <div className="caption">5-axis CNC</div>
+            <div className="caption">Desktop Simultaneous 5-axis CNC Machine</div>
+          </SubListItem>
+          <SubListItem url={concrete} width={70} height={70} hasImage link={'/blogs/blog_1'} {...props}>
+            <span className="subtitle">Concrete 3D Printer</span>
+            <div className="caption">Automated Concrete Laying Machine</div>
           </SubListItem>
         </SubList>
       </NavItem>
@@ -47,10 +52,10 @@ const navList = (props) => {
         address={'#user-sub-list'}
       >
         <SubList type={"left"} id={'user-sub-list'}>
-          <SubListItem url={halo} width={30} height={30} link={'#halo'}>
+          <SubListItem link={'#halo'}>
             <span className="subtitle">Dashboard</span>
           </SubListItem>
-          <SubListItem url={ray} width={30} height={30} link={'#ray'}>
+          <SubListItem link={'#ray'}>
             <span className="subtitle">Log Out</span>
           </SubListItem>
         </SubList>

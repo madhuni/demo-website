@@ -20,7 +20,12 @@
 }
 
 .sub-list-container--right .sub-list {
-  min-width: 35rem;
+  /* min-width: 35rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40rem;
+  list-style: none;
 }
 
 .sub-list {
@@ -52,6 +57,7 @@
 
   .sub-list {
     list-style: none;
+    display: block;
     min-width: 100% !important;
     padding: 1rem 0 1rem 2rem;
     background: transparent;
