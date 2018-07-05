@@ -23,10 +23,10 @@ class Home extends Component {
   render() {
     return (
       <div className="page page--home">
-        <PageBanner heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of hybrid manufacturing"} classValue={"page-banner--home"} />
+        <PageBanner heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of manufacturing. We create entrepreneurs."} classValue={"page-banner--home"} />
         <section className="section section--products">
           <div className="container">
-            <SectionHeading name={"Our wide range of industrial grade products"} classValue={"u-margin-bottom-big u-text-center"} />
+            {/* <SectionHeading name={"Our wide range of industrial grade products"} classValue={"u-margin-bottom-big u-text-center"} /> */}
             <LazyLoad height={200} offset={200} once>
               <Products />
             </LazyLoad>
@@ -34,7 +34,7 @@ class Home extends Component {
         </section>
         <section className="section section--why-us section--background-fill">
           <div className="container">
-            <SectionHeading name={"Why we are the best"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
+            <SectionHeading name={"What Defines Us"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
             <LazyLoad height={200} offset={200} once>
               <CompanyFeatures />
             </LazyLoad>
@@ -53,8 +53,8 @@ class Home extends Component {
             <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
             <LazyLoad height={200} offset={200} once>
               <ContactUsBanner
-                firstText={"Want to exporle more about us?"}
-                secondText={"Write us for any queries."}
+                firstText={"Let's get going!"}
+                secondText={"We want to talk to you as well."}
               />
             </LazyLoad>
           </div>
