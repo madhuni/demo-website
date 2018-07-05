@@ -64,8 +64,7 @@ section,
   position: relative;
 }
 
-.section--contact-us,
-.section--careers-form {
+.section--contact-us {
   /* background: rgb(240, 240, 240); */
   background: #f7f7f7;
 }

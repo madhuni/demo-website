@@ -13,9 +13,8 @@
 
 .company-feature-img-container {
   height: 20rem;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   filter: grayscale(100%);
   /* padding: 4rem; */
   /* justify-content: center; */

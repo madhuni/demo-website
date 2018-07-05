@@ -50,7 +50,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 76.8rem;
+  max-width: 80rem;
 }
 
 .banner-heading {
@@ -58,4 +58,10 @@
   font-size: var(--larger-font-size);
   font-family: var(--thin);
   border-bottom: .1rem solid var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .container--page-banner {
+    max-width: 76.8rem;
+  }
 }

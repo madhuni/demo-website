@@ -89,6 +89,7 @@ a:hover {
 
   .hr--primary-heading {
     width: 100%;
+    border-top: .15rem solid var(--color-secondary);
     margin-right: auto;
     margin-left: 0 !important;
   }
