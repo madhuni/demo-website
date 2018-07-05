@@ -30,7 +30,7 @@ const footer = (props) => {
           <Logo url={logoWithName} width={80} height={95} id={"footer-logo"}/>
           <div className="govt-initiative">
             <img src={makeInIndia} alt="Make In India" className="make-in-india-logo"/>
-            <img src={iso} alt="Iso" className="iso-logo"/>
+            {/* <img src={iso} alt="Iso" className="iso-logo"/> */}
             <img src={startupIndia} alt="Startup India" className="startup-india-logo" />
           </div>
         </div>
@@ -50,10 +50,10 @@ const footer = (props) => {
               <NavLink to="/blogs">Blogs</NavLink>
             </li>
             <li className="link-item">
-              <NavLink to="/careers">Careers</NavLink>
+              <NavLink to="/contact">Contact Us</NavLink>
             </li>
             <li className="link-item">
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/careers">Careers</NavLink>
             </li>
           </ul>
         </div>
@@ -61,13 +61,16 @@ const footer = (props) => {
           <div className="footer-title">Products</div>
           <ul className="links-list">
             <li className="link-item">
-              <NavLink to='/products/halo'>Halo</NavLink>
-            </li>
-            <li className="link-item">
               <NavLink to='/products/ray'>Ray</NavLink>
             </li>
             <li className="link-item">
+              <NavLink to='/products/halo'>Halo</NavLink>
+            </li>
+            <li className="link-item">
               <NavLink to='/products/pentagram'>Pentagram</NavLink>
+            </li>
+            <li className="link-item">
+              <NavLink to='/blogs/blog_1'>Concrete 3D Printer</NavLink>
             </li>
           </ul>
         </div>
