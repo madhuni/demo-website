@@ -65,21 +65,21 @@ class About extends Component {
             </LazyLoad>
           </div>
         </section>
-        <section className="section section--team">
+        {/* <section className="section section--team">
           <div className="container">
             <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Meet our team'}/>
             <LazyLoad height={200} offset={100} once>
               <Team team={this.props.teamItems} loading={this.state.loadingContent}/>
             </LazyLoad>
           </div>
-        </section>
+        </section> */}
         <section className="section section--contact-us">
           <div className="container">
             <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
             <LazyLoad height={200} offset={100} once>
               <ContactUsBanner
-                firstText={"Not sure where to go next?"}
-                secondText={"Contact us to clear your doubts."}
+                firstText={"We are waiting to address your query."}
+                secondText={"Contact us today."}
               />
             </LazyLoad>
           </div>

@@ -23,13 +23,17 @@
   align-items: flex-start;
 }
 
-.vision {
+/* .vision {
   padding-right: 3rem;
-}
+} */
 
-.vision,
+/* .vision,
 .mission {
   width: 50%;
+} */
+
+.mission {
+  width: 100%;
 }
 
 .about-title {
