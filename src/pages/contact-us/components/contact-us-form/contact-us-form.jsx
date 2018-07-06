@@ -14,11 +14,19 @@ import Select from '../../../../components/pages-component/form-controls/select'
 import TextArea from '../../../../components/pages-component/form-controls/text-area';
 
 import stateOptions from './state-options';
+// import countryCodeOptions from './country-code-options';
 
 class ContactUsForm extends Component {
   render() {
-    const regionOptions = ['India', 'International'];
-    const natureOfQuery = ['General Queries', 'Become a reseller or distributor', 'Media Queries'];
+    const regionOptions = [
+      {id: 1, value: 'India'},
+      {id: 2, value: 'International'},
+    ];
+    const natureOfQuery = [
+      {id: 1, value: 'General Queries'},
+      {id: 2, value: 'Become a reseller or distributor'},
+      {id: 3, value: 'Media Queries'},
+    ];
 
     return (
       <Form {...this.props} classValue={"form form--contact-us"}>
@@ -26,7 +34,8 @@ class ContactUsForm extends Component {
           <Select labelName={"Nature of Query"} inputName={"natureOfQuery"} options={natureOfQuery} defaultValue={"--select--"} isRequired {...this.props} />
           <InputText labelName={"Name"} inputName={"name"} placeholder={"Enter Name"} isRequired {...this.props} />
           <InputEmail labelName={"Email"} inputName={"email"} placeholder={"Enter Email"} isRequired {...this.props} />
-          <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Contact No. in format (+<country-code>XXXXXXXXXX)"} isRequired {...this.props} />
+          {/* <Select labelName={"Country Code"} inputName={"countryCode"} options={countryCodeOptions} defaultValue={"--select--"} isRequired type={"countryCode"} {...this.props} /> */}
+          <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Contact No. with Country Code (e.g. +91XXXXXXXXXX)"} isRequired {...this.props} />
           { this.props.natureOfQuery === 'General Queries' ?
             <Select labelName={"Region"} inputName={"region"} options={regionOptions} defaultValue={"--select--"} isRequired {...this.props} /> :
             null
