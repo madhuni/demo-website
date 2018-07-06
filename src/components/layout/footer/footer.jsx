@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 import './footer.css';
 
 import logoWithName from '../../../assets/images/logo/logo-with-name-white.svg';
-import iso from './assets/images/iso-white.png';
+import ces from './assets/images/ces.png';
 import makeInIndia from './assets/images/make-in-india.png';
 import startupIndia from './assets/images/startup-india.svg';
 
@@ -29,9 +29,9 @@ const footer = (props) => {
         <div className="logo-col">
           <Logo url={logoWithName} width={80} height={95} id={"footer-logo"}/>
           <div className="govt-initiative">
-            <img src={makeInIndia} alt="Make In India" className="make-in-india-logo"/>
-            {/* <img src={iso} alt="Iso" className="iso-logo"/> */}
-            <img src={startupIndia} alt="Startup India" className="startup-india-logo" />
+            <img src={ces} alt="CES" className="ces-logo" height="60"/>
+            <img src={makeInIndia} alt="Make In India" className="make-in-india-logo" height="40"/>
+            <img src={startupIndia} alt="Startup India" className="startup-india-logo" height="25"/>
           </div>
         </div>
         <div className="footer-col-divider" content="company-items">

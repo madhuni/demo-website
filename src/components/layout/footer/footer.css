@@ -45,7 +45,7 @@
 .govt-initiative {
   display: grid;
   grid-template-columns: repeat(3, min-content);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   align-items: center;
   padding: 3rem 0;
   /* Controversial design */
@@ -53,13 +53,13 @@
 }
 
 .make-in-india-logo {
-  grid-column: 1 / span 1;
+  grid-column: 2 / span 1;
   height: 4rem;
 }
 
-.iso-logo {
-  grid-column: 2 / span 1;
-  height: 4rem;
+.ces-logo {
+  grid-column: 1 / span 1;
+  height: 6rem;
 }
 
 .startup-india-logo {
@@ -133,6 +133,7 @@
   }
 
   .govt-initiative {
+    grid-row-gap: 2.5rem;
     justify-content: center;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
