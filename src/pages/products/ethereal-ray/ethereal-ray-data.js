@@ -18,7 +18,7 @@ const etherealRay = {
     {
       id: 1,
       title: 'Dual Extruder',
-      description: 'Dual extruder gives you the freedom to combine water soluble suppoort materials and engineering plastics to create complex geometries or print in two different colours',
+      description: 'Dual extruder gives you the freedom to combine multiple materials and engineering plastics to create complex geometries or print in two different colours',
       imgUrl: dual_extruder
     },
     {
@@ -30,19 +30,19 @@ const etherealRay = {
     {
       id: 3,
       title: 'Original E3D Hot End and Extruder',
-      description: 'Original E3D Chimera hotends and E3D Titaln extruders ensure superior quality prints',
+      description: 'Original E3D hotends and E3D extruders ensure superior quality prints',
       imgUrl: original_e3d_hot_end_and_extruder
     },
     {
       id: 4,
       title: 'Intereactive UI and Full Colour Touch Screen Panel',
-      description: 'A 5.5" capacitive touch screen and and intutive onboard software makes operating the Ray and easy job',
+      description: 'A 5" capacitive touch screen and and intutive onboard software makes operating the Ray an easy job',
       imgUrl: interactive_ui_and_full_colour_touch_screen
     },
     {
       id: 5,
       title: 'Optimized Cooling System',
-      description: 'An advanced cooling system with a powerful radial fan and specially designed air duct ensures better cooling, high quality bridging and better surface finishes',
+      description: 'An advanced cooling system with specially designed air duct ensures better cooling, high quality bridging and better surface finishes',
       imgUrl: optimized_cooling_system
     },
     {
@@ -66,7 +66,7 @@ const etherealRay = {
     {
       id: 9,
       title: 'Multiple Material Support',
-      description: 'Flexibility to use numerous 3D printing materials including water soluble PVA and engineering plastics like ABS, Nylon etc',
+      description: 'Flexibility to use numerous 3D printing materials and engineering plastics like TPU, ABS, Nylon, etc',
       imgUrl: multiple_material_support
     },
   ],
@@ -94,7 +94,7 @@ const etherealRay = {
     {
       id: 5,
       title: 'Nozzle Size',
-      description: '0.2, 0.2, 0.8, 1.0 mm'
+      description: '0.2, 0.4, 0.8 mm'
     },
     {
       id: 6,
@@ -109,7 +109,7 @@ const etherealRay = {
     {
       id: 8,
       title: 'Hot End Temperature',
-      description: 'Upto 285 Deg Celcius'
+      description: 'Upto 285 Deg Celsius'
     },
     {
       id: 9,
@@ -139,7 +139,7 @@ const etherealRay = {
     {
       id: 14,
       title: 'Input Power',
-      description: '110-240 V, 4A'
+      description: '110-240 VAC, 4A'
     },
   ]
 };

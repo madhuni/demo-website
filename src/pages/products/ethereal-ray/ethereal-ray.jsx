@@ -37,12 +37,12 @@ class EtherealRay extends Component {
                 <div className="detail-text">
                   <p>The Ethereal Ray is a smart device built to unbridle the designer and
                   engineer in you. Equipped with two nozzles, the Ray helps
-                  you achieve prints with dissolvable support materials and dual
+                  you achieve prints with multiple materials and dual
                   colours.</p>
                   <p>Print seamlessly via Wi-Fi. Slice on the cloud. Monitor through
                   your phone. Save prints on the cloud.</p>
                   <p>User experience takes top priority at Ethereal Machines. The
-                  Ray dons a 5.5" capacitive touchscreen and LEDs that signal
+                  Ray dons a 5" capacitive touchscreen and LEDs that signal
                   various stages of a print to enhance user experience.</p>
                   <p>The Ethereal Ray is poised to provide a makeover to your
                   desktop and is your tool to take your ideas from design to
