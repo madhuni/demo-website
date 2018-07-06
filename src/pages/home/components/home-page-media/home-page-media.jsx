@@ -21,7 +21,7 @@ const homePageMedia = (props) => {
   return (
     <div className="home-page-media-container three-col-layout">
       {homePageMediaItems}
-      <NavBtn url={'media'} classValue={'btn--blue'}>Know More</NavBtn>
+      <NavBtn url={'media'} classValue={'btn--blue'}>See More</NavBtn>
     </div>
   );
 };

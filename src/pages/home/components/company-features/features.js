@@ -3,28 +3,28 @@
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
 
-import quality from './assets/images/quality.jpeg';
-import team from './assets/images/team.jpg';
+import pioneers from './assets/images/pioneers.jpeg';
+import experience from './assets/images/experience.jpg';
 import vision from './assets/images/vision.jpeg';
 
 const features = [
   {
     id: 1,
-    iconUrl: quality,
-    subtitle: 'Quality',
-    text: 'Quality is our best policy. And we Live for the quality. We live to fulfill the dreams of million.'
+    iconUrl: pioneers,
+    subtitle: 'Pioneers',
+    text: 'We are a harbinger of advancement in technologies related to subtractive and additive manufacturing. We are the first to introduce the concept of hybrid manufacturing on 5 axis machines on the desktop scale.'
   },
   {
     id: 2,
-    iconUrl: team,
-    subtitle: 'Team',
-    text: 'Team is our best policy. And we Live for the quality. We live to fulfill the dreams of million.'
+    iconUrl: experience,
+    subtitle: 'Experience',
+    text: 'We have dedicated our lives to understanding the intricate requirements of the manufacturing industry and have followed up on iterations of our machines according to industry and SME needs.'
   },
   {
     id: 3,
     iconUrl: vision,
     subtitle: 'Vision',
-    text: 'Vision is our best policy. And we Live for the quality. We live to fulfill the dreams of million.'
+    text: 'We are working towards integrating and advancing the mechanical industry with the world of software. A perfect combination of hardware and software will dictate the future that awaits the manufacturing industry.'
   }
 ];
 

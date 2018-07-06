@@ -14,7 +14,7 @@ const etherealProducts = [
     name: 'Ethereal Ray',
     imgUrl: ray,
     width: '250',
-    description: 'A smart Dual Extruder 3D Printer'
+    description: 'Smart Dual Extruder 3D Printer'
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const etherealProducts = [
     name: 'Ethereal Halo',
     imgUrl: halo,
     width: '300',
-    description: '5-Axis 3D Printer and CNC'
+    description: 'Hybrid 5-Axis CNC Machine and 3D Printer'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const etherealProducts = [
     name: 'Ethereal Pentagram',
     imgUrl: pentagram,
     width: '300',
-    description: '5-Axis CNC'
+    description: 'Desktop Simultaneous 5-Axis CNC Machine'
   }
 ];
 
