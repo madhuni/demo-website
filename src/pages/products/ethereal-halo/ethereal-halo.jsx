@@ -76,9 +76,9 @@ class EtherealHalo extends Component {
                 <div className="product-details">
                   <SectionHeading name={"About Ethereal Halo"} classValue={"u-margin-bottom-small u-text-left"}/>
                   <div className="detail-text">
-                    <p>The Ethereal Halo has been designed to bring about a metamorphosis to the world of manufacturing and kick off the concept of hybrid manufacturing. Ethereal Halo is the world’s first consumer oriented 5-axis 3-D printer and 5-axis CNC Router.</p>
+                    <p>The Ethereal Halo has been designed to bring about a metamorphosis to the world of manufacturing and kick off the concept of hybrid manufacturing. Ethereal Halo is the world’s first consumer oriented 5-axis 3-D printer and 5-axis CNC Mill.</p>
                     <p>Ethereal Halo is a machine that introduces Hybrid Manufacturing to the world and combines both the technologies of subtractive manufacturing and additive manufacturing into one bundle, with a high degree of accuracy.</p>
-                    <p>The Halo can equip an entire spectrum ranging from the hobbyist to an industry with quick prototyping and manufacturing abilities. A 5-axis printer and a 5-axis CNC Router bundled up into one single affordable machine heralds the future.</p>
+                    <p>The Halo can equip an entire spectrum ranging from the hobbyist to the industrialist with quick prototyping and manufacturing abilities. A 5-axis printer and a 5-axis CNC Mill bundled up into one single affordable machine heralds the future.</p>
                   </div>
                 </div>
                 <div className="product-img flex-column">

@@ -16,7 +16,7 @@ const etherealHalo = {
   features: [
     {
       id: 1,
-      title: 'Additive + Substractive Manufacturing',
+      title: 'Additive + Subtractive Manufacturing',
       description: 'Freedom to switch between the two processes at any point',
       imgUrl: additive_subtractive
     },
@@ -29,19 +29,19 @@ const etherealHalo = {
     {
       id: 3,
       title: '5-Axis Simultaneous Kinematics',
-      description: '5 axis simulatneous movement to help reduce machining time',
+      description: '5 axis simulatneous movement to help reduce machining time and achieve better surface finish',
       imgUrl: five_axis_simultaneous
     },
     {
       id: 4,
       title: 'High Accuracy Drive Mechanism',
-      description: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails',
+      description: 'Achieved through utilization of accurately calibrated ball screws and linear guide rails',
       imgUrl: high_accuracy_drive_mechanism
     },
     {
       id: 5,
       title: 'Dedicated PC-Based Controller',
-      description: 'Real time monitoring and control of the machining / printing job in progress',
+      description: 'Real time monitoring and control of the machining/printing job in progress',
       imgUrl: dedicated_pc_based_controller
     },
     {
@@ -67,12 +67,12 @@ const etherealHalo = {
     {
       id: 1,
       title: 'Work Area',
-      description: '150 X 150 mm'
+      description: '150 Ø X 150 mm'
     },
     {
       id: 2,
-      title: 'Footprint',
-      description: '900 x 900 mm'
+      title: 'Dimensions',
+      description: '900 x 900 x 1250 mm (dkh ke bataya jayega)'
     },
     {
       id: 3,
@@ -82,12 +82,12 @@ const etherealHalo = {
     {
       id: 4,
       title: 'Load Bearing Capacity',
-      description: '8 kgs'
+      description: '4 kgs'
     },
     {
       id: 5,
       title: 'Subtractive Manufacturing Materials',
-      description: 'Wax, Foam, Nylon, Plastics etc.'
+      description: 'Wax, Foam, Plastics, Wood etc.'
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ const etherealHalo = {
     {
       id: 7,
       title: 'Additive Manufacturing Materials',
-      description: 'ABS, PLA, PVA, PC, NYLON, PET-G etc'
+      description: 'ABS, PLA, PVA, PC, NYLON, PET-G etc.'
     },
     {
       id: 8,
@@ -107,7 +107,7 @@ const etherealHalo = {
     {
       id: 9,
       title: 'Spindle',
-      description: '800W, DC motor, ER-11 tool holder'
+      description: '800W, AC motor, ER-11 tool holder'
     },
     {
       id: 10,
@@ -126,8 +126,8 @@ const etherealHalo = {
     },
     {
       id: 13,
-      title: 'Power Supply',
-      description: '2.5 kW'
+      title: 'Power Requirement',
+      description: '110-240 VAC, 2.5 kW'
     },
   ]
 };
