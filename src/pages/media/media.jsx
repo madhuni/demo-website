@@ -58,8 +58,8 @@ class Media extends Component {
   render() {
     const media = this.props.mediaItems.map(item => {
       return (
-        <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once>
-          <MediaItem key={item.id} item={item} />
+        <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once key={item.id}>
+          <MediaItem item={item} />
         </LazyLoad>
       );
     });

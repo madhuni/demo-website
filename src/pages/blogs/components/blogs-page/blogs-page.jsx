@@ -19,9 +19,8 @@ import './blogs-page.css';
 const blogsPage = (props) => {
   const blogsItem = blogsData.map((item) => {
     return (
-      <LazyLoad height={200} offset={100} placeholder={<Spinner />} once>
+      <LazyLoad height={200} offset={100} placeholder={<Spinner />} once key={item.id}>
         <BlogItem
-          key={item.id}
           title={item.title}
           date={item.date}
           url={item.url}
