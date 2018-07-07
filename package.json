@@ -2,11 +2,12 @@
   "name": "etherealmachines.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://madhuni.github.io/demo-website",
+  "homepage": "http://madhuni.github.io/demo-website/",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-lazyload": "^2.3.0",
     "react-loadable": "^5.4.0",
     "react-redux": "^5.0.7",
     "react-responsive-carousel": "^3.1.39",
