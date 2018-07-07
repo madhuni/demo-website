@@ -34,6 +34,34 @@
   width: 50%;
 }
 
+.coming-soon {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+.coming-soon .main {
+  font-size: var(--medium-font-size);
+  font-family: var(--regular);
+}
+
+.coming-soon .sub {
+  font-size: var(--small-font-size);
+}
+
+.coming-soon + div {
+  filter: blur(1rem);
+  opacity: .5;
+  z-index: -1;
+}
+
 @media screen and (max-width: 768px) {
   .tech-specs-container {
     grid-column: 1 / -1;

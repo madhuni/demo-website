@@ -25,7 +25,19 @@ const productTechSpecs = (props) => {
     );
   });
 
+  const comingSoonDiv = (
+    <div className="coming-soon flex-column">
+      <span className="main">More Details About the Product</span>
+      <br />
+      <span className="sub">Coming Soon...</span>
+    </div>
+  );
+
   let productImg;
+  const pentagramImgStyles = {
+    opacity: '.2'
+  };
+
   switch (props.product) {
     case 'ray':
       productImg = <LazyLoad height={200} offset={100} once><img src={ray} alt="Ray" /></LazyLoad>
@@ -34,7 +46,7 @@ const productTechSpecs = (props) => {
       productImg = <LazyLoad height={200} offset={100} once><img src={halo} alt="Halo" /></LazyLoad>
       break;
       case 'pentagram':
-      productImg = <LazyLoad height={200} offset={100} once><img src={pentagram} alt="Pentagram" /></LazyLoad>
+      productImg = <LazyLoad height={200} offset={100} once><img src={pentagram} alt="Pentagram" style={pentagramImgStyles}/></LazyLoad>
       break;
 
     default:
@@ -44,6 +56,11 @@ const productTechSpecs = (props) => {
   return (
     <section className="section section--product-tech-specs">
       <div className="container">
+        {
+          props.product === 'pentagram' ?
+          comingSoonDiv :
+          null
+        }
         <div className="col-12-grid">
           <div className="product-img product-img--left flex-column">
             {productImg}

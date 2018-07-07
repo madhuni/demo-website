@@ -24,7 +24,7 @@ const etherealPentagram = {
     {
       id: 2,
       title: 'Ample Work Area',
-      description: 'The Pentagram offers a work area of 200 x 200 mm',
+      description: 'The Pentagram offers a work area of 200 Ø x 200 mm',
       imgUrl: ample_work_area
     },
     {
@@ -36,7 +36,7 @@ const etherealPentagram = {
     {
       id: 4,
       title: 'High Accuracy Drive Mechanism',
-      description: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails',
+      description: 'Achieved through utilization of accurately calibrated ball screws and linear guide rails',
       imgUrl: high_accuracy_drive_mechanism
     },
     {
@@ -74,47 +74,47 @@ const etherealPentagram = {
     {
       id: 1,
       title: 'Work Area',
-      description: '200 X 200 mm'
+      description: 'XXX Ø X XXX mm'
     },
     {
       id: 2,
-      title: 'Footprint',
-      description: '960 x 875 mm'
+      title: 'Dimensions',
+      description: 'XXX x XXX x XXX mm'
     },
     {
       id: 3,
       title: 'Accuracy',
-      description: '60 microns'
+      description: 'XX microns'
     },
     {
       id: 4,
       title: 'Load Bearing Capacity',
-      description: '25 kgs'
+      description: 'XX kgs'
     },
     {
       id: 5,
       title: 'Subtractive Manufacturing Materials',
-      description: 'Soft Metals (Aluminium, Gold, Silver, Bronze etc), Wax, Foam, Wood, Plastics etc.'
+      description: 'abcd..'
     },
     {
       id: 6,
       title: 'Dedicated PC-Based Controller',
-      description: 'Real time monitoring and control of the machining in process'
+      description: 'lorem ipsum text'
     },
     {
       id: 7,
       title: 'Spindle',
-      description: '2.2kW / 3.0kW, DC motor, ER-20 tool holder'
+      description: 'X.X kW / X.X kW'
     },
     {
       id: 8,
       title: 'Working Speed',
-      description: '2000 mm/min'
+      description: 'XXXX mm/min'
     },
     {
       id: 9,
       title: 'Power Supply',
-      description: '8kW, 3phase'
+      description: 'X kW, X-phase'
     }
   ]
 };
