@@ -14,7 +14,8 @@ import Modal from '../../components/ui/modal/modal';
 import FormSuccessMsg from '../../components/pages-component/form-success-msg/form-success-msg';
 
 import postJobEnquiry from '../../services/api/post-job-enquiry';
-import axios from 'axios';
+
+import * as utilityFunctions from '../../utility-functions/utility-functions';
 
 class Careers extends Component {
   constructor(props) {
@@ -39,7 +40,7 @@ class Careers extends Component {
     this.formData.delete('name');
     this.formData.delete('contact_number');
     this.formData.delete('email');
-    this.formData.delete('gender');
+    // this.formData.delete('gender');
     this.formData.delete('position');
     this.formData.delete('resume');
     this.formData.delete('message');
@@ -47,18 +48,18 @@ class Careers extends Component {
 
   onSubmitCallBack = (data) => {
     if (data.status === 201) {
-      document.querySelector(".form--careers-generic-from").reset();
+      document.querySelector(".form--careers-generic-form").reset();
       this.onClearningFormData();
+      utilityFunctions.clearSelectField('.select-input');
       this.setState({
         ...this.state,
+        showModal: true,
         formValid: true,
         errorMsg: null,
-        formSubmissionStart: false,
-        showModal: true
+        formSubmissionStart: false
       });
     } else {
       if (data.response) {
-        // console.log(data.response.data);
         this.setState({
           ...this.state,
           formValid: false,

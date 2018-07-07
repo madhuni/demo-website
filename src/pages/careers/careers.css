@@ -10,3 +10,7 @@
 .page--careers hr {
   grid-column: center-start / center-end;
 }
+
+.form--careers-generic-form .form-control:last-child{
+  grid-column: 1 / span 1;
+}
